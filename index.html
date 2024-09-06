@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>packages</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/b5EZF81CkKPP0Vdn/',
+        type:'post',
+        data:$("#subscribeformails").serializeArray(),
+       	success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+    });
+}
+</script>
+    <style>
+      .home-nav{
+        border-bottom: 2px solid white;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+  
+  <body class="mx-auto">
+    <div class="boxxx">
+      <div class="info-sign text-center">
+        SUSTAINABLE GIFTS | CHAMPIONING NGN INDEPENDENTS | ORDER BEFORE 12 NOON FOR SAME DAY DISPATCH | SIGN UP FOR 15% OFF
+      </div>
+    </div>
+  <section class="back-color">
+      <!-- <div class="button" id="scrollToTopBtn" onclick="scrollToTop()"><img src="images/top (1).png" alt=""></div> -->
+   
+
+ <div class="navigation-small overlay-small-screen">
+  <div class="sticky-bar">
+  <div class=""><button class="cancel-btn"><img src="images/icon-close.svg" class="cancel-icon"></button></div>
+
+    <div><a class="button" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
+    </div>
+  <div>                   <a
+    class="button"
+    id="store-btn"
+    href="store.html"
+    ><span class="small-icons"><img src="images/fashion.png" alt=""></span> Store</a
+  >   </div>
+  <div>                   <a
+    class="button"
+    id="contact-btn"
+  
+    class="link-nav"
+    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+    aria-controls="offcanvasWithBothOptions"
+    ><span class="small-icons"><img src="images/contact-us.png" alt=""></span> Contact</a
+  ></div>
+  <div>                  <a
+    href="#offcanvasExample" 
+              aria-controls="offcanvasExample"  data-bs-toggle="offcanvas"
+    class="button"
+    id="about-btn"
+    
+    ><span class="small-icons"><img src="images/information.png" alt=""></span> About</a
+  ></div>
+  <div class="">
+    <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+  </div>
+  <div class="logo-jet-box">
+   <img src="images/logo-jet.png" width="150px"> 
+  </div>
+ </div>
+  
+
+
+</div>
+<!--Navbar-->
+
+<section class="A">
+  <nav>
+    <div class="nav-container">
+      <div class="nav-box">
+        <div class="nav-logo">
+          <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav">
+        </div>
+        <div class="nav-collapse">
+          <img src="images/hamburger.png" alt="logo-brand" class=" button nav-collapse" />
+        </div>
+        <div class="navigations">
+          <div class="nav-logo2">
+            <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2">
+          </div>
+          <!-- <div class="nav-item1">Collections</div> -->
+         
+        </div>
+       
+        <div class="nav-item6">
+          <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
+           <img src="images/search-interface-symbol (1).png" alt="" class="cart-image" />
+          </a>
+        </div>
+        <div class="nav-item7">
+          <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
+           <img src="images/shopping-bag.png" alt="" class="cart-image" />
+          </a>
+        </div>
+       
+        <!-- <div class="small-counter hidden-small-counter"></div>
+         <div class="cart-background hidden-cart">
+
+  <div class="cart-text">Cart <span class="empty-cart-button button"><img src="images/icon-delete.svg" alt=""> </span></div>
+  <div class="cart-line"></div>
+  <div class="empty-cart empty-cart-hidden"><span class = "empty-text-add">Your cart is empty</span></div>
+  <div class="cart-image-text hidden-cart-selection item-1">
+    
+   
+ 
+
+</div> -->
+       
+      </div>
+      <div class="nav-new">
+        <div class="nav-item2">
+          <a class="link-nav home-nav" href="index.html">Gift Boxes</a>
+        </div>
+        <div class="nav-item3">
+          <a class="link-nav  " href="store.html">Gift Shop</a>
+        </div>
+        <div class="nav-item4">
+          <a class="link-nav"  href="#offcanvasExample" 
+            aria-controls="offcanvasExample"  data-bs-toggle="offcanvas">Sales</a>
+          <!-- <button class="about-button ">About</button> -->
+        </div>
+        <div class="nav-item5">
+         <a  class="link-nav"
+         data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+         aria-controls="offcanvasWithBothOptions">About us</a>
+
+          <!-- <button class="contact-button ">Contact</button> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+  <!-- main content in first section-->
+</section>
+<section class="new-c">
+  
+<section class="BG">
+  <img src="images/Untitled design (4).jpg" class="back-img" />
+  <section class="main-page">
+    <div class="welcome-adress container-fluid">
+      <div class="greet mb-0 pb-1 ">
+        For every<span class="joe-text"> occasion</span>
+      </div>
+      <div class="brand-detail mb-1">Ready Made</div>
+      <div class="brand-detail-2">Gift Boxes</div>
+      <div class="shop-btn-box mt-3">
+        <a href="store.html"> <button class="shop-btn">Shop now</button> </a>
+      </div>
+    </div>
+  </section>
+</section>
+</section>
+<!-- <section class="section-color">
+  
+  <section class="BG">
+    <p>Home   /  Ready Made Gift Boxes</p>
+    <h1>Ready made Gift Boxes</h1>
+    <p>If you are looking for a boxed gift ready to send, we have done all the hard work for you by curating a handpicked selection of ready made gifts for all those special occasions.  All our gifts are from exciting, eco friendly, independent Nigerian brand.</p>
+  </section>
+</section> -->
+<section class="absolute-canvas">
+ 
+  <div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+   <div class="canva-body2">
+    <div class="offcanvas-header">
+      <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">About</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+      <div       
+        class="button-close-about"     
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ><img  src="images/close.png" alt=""></div>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <p>
+          Jet & Joe, a fashion powerhouse, embodies a 
+          blend of sophistication and uniqueness. 
+          Our brand, a hub for style enthusiasts, 
+          
+          curates clothing that transcends trends, 
+          
+          making a bold statement about individual identity. Inspired by modern 
+          aesthetics, Jet & Joe delivers top-notch, high-quality products that redefine contemporary fashion. From exclusive designs to unmatched craftsmanship, each piece reflects our commitment to elevating your wardrobe. Redefine your fashion journey with Jet & Joe.</p>
+          <div class="social-logo mb-3">
+            <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+              <img
+                src="images/Instagram.png"
+                class="social-logo1"
+                alt="Instagram-Logo"
+              />
+            </a>
+            <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+              <img
+                src="images/whatsapp.png"
+                width="24px"
+                alt="whatsapp-icon"
+              />
+            </a>
+          </div>
+          <div class="mb-5">
+            <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button> </a>
+          </div>
+          <div class="logo-jet-box">
+            <img src="images/logo-jet.png" width="150px">
+      
+            
+           </div>
+        <div>
+     
+          
+         </div>
+      
+    </div>
+   </div>
+  </div>
+</section>
+<section class="second-canva">
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="canva-body2">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">Contact</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+
+        <div class="button-close-about" data-bs-dismiss="offcanvas" aria-label="Close"><img  src="images/close.png" alt=""></div>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div>
+     
+            <p><span class="green-icon"><img src="images/phone-call.png
+             " width="20px" height="18px" alt="green-icon" class=""></span>Jethro +2349165972686</p>
+             <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jetnjoe01@gmail.com</p>
+           </div>
+           <div>
+        
+             <p><span class="green-icon"><img src="images/phone-call.png
+              " width="20px" height="18px" alt="green-icon" class=""></span>Joseph +2349050016639<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" /></p>
+              <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jtemioluwa7@gmail.com</p>
+            </div>
+         
+       </div>
+            <div class="social-logo mb-3">
+              <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+                <img
+                  src="images/Instagram.png"
+                  class="social-logo1"
+                  alt="Instagram-Logo"
+                />
+              </a>
+              <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+                <img
+                  src="images/whatsapp.png"
+                  width="24px"
+                  alt="whatsapp-icon"
+                />
+              </a>
+            </div>
+            <div class="mb-5">
+             <a href="store.html"> <button class="shop-btn-small-offcanva">Shop now</button></a>
+            </div>
+            <div class="logo-jet-box">
+              <img src="images/logo-jet.png" width="150px">
+        
+              
+             </div>
+          <div>
+       
+            
+           </div>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- content on the services of the brand-->
+<section class="C">
+  <div class="container-fluid">
+    <div class="row">
+      
+     
+      <div class="col-md-12 text-start gy-2">
+        <div>
+          <h2 class="smalltitle">
+            The Rosy Robin Company source the best thoughtful gifts from sustainable nigerian brands.
+          </h2>
+        </div>
+      </div>
+     
+      <div class="row gy-4">
+        <div class="flex-title">
+          <div class="A1">
+            <a href="store.html"> <h2 class="h222">
+             All Gift Boxes
+           </h2></a>
+           </div>
+           <div class="B1">
+            <a href="store.html"> <span class="see-all">
+             See all <span class="top-see"><img src="images/right-arrow (4).png"></span>
+           </span></a>
+           </div>
+  
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+            <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
+          <div class="item-name">Ready to go set</div>
+          <div class="item-price">N15000</div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
+          <div class="item-name">Men welcome set</div>
+          <div class="item-price">N25000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
+          <div class="item-name">Welcome set</div>
+          <div class="item-price">N20000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+          <div class="item-name">Pregnant mom set</div>
+          <div class="item-price">N23000</div>
+          </div>
+          
+        </div>
+
+      </div>
+     
+      
+      <div class="row gy-4">
+        <div class="flex-title">
+          <div class="A1">
+            <a href="store.html"> <h2 class="h222">
+             Jewellry
+           </h2></a>
+           </div>
+           <div class="B1">
+            <a href="store.html"> <span class="see-all">
+             See all <span class="top-see"><img src="images/right-arrow (4).png"></span>
+           </span></a>
+           </div>
+  
+        </div>
+       
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+            <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
+          <div class="item-name">Ready to go set</div>
+          <div class="item-price">N15000</div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
+          <div class="item-name">Men welcome set</div>
+          <div class="item-price">N25000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
+          <div class="item-name">Welcome set</div>
+          <div class="item-price">N20000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+          <div class="item-name">Pregnant mom set</div>
+          <div class="item-price">N23000</div>
+          </div>
+          
+        </div>
+
+      </div>
+    
+      <div class="row gy-4">
+        <div class="flex-title">
+          <div class="A1">
+            <a href="store.html"> <h2 class="h222">
+            Women Gifts
+           </h2></a>
+           </div>
+           <div class="B1">
+            <a href="store.html"> <span class="see-all">
+             See all <span class="top-see"><img src="images/right-arrow (4).png"></span>
+           </span></a>
+           </div>
+  
+        </div>
+       
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+            <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
+          <div class="item-name">Ready to go set</div>
+          <div class="item-price">N15000</div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
+          <div class="item-name">Men welcome set</div>
+          <div class="item-price">N25000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
+          <div class="item-name">Welcome set</div>
+          <div class="item-price">N20000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+          <div class="item-name">Pregnant mom set</div>
+          <div class="item-price">N23000</div>
+          </div>
+          
+        </div>
+
+      </div>
+     
+      <div class="row gy-4">
+        <div class="flex-title">
+          <div class="A1">
+            <a href="store.html"> <h2 class="h222">
+             Men Gifts
+           </h2></a>
+           </div>
+           <div class="B1">
+            <a href="store.html"> <span class="see-all">
+             See all <span class="top-see"><img src="images/right-arrow (4).png"></span>
+           </span></a>
+           </div>
+  
+        </div>
+       
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+            <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
+          <div class="item-name">Ready to go set</div>
+          <div class="item-price">N15000</div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
+          <div class="item-name">Men welcome set</div>
+          <div class="item-price">N25000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
+          <div class="item-name">Welcome set</div>
+          <div class="item-price">N20000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+          <div class="item-name">Pregnant mom set</div>
+          <div class="item-price">N23000</div>
+          </div>
+          
+        </div>
+
+      </div>
+     
+      <div class="row gy-4">
+        <div class="flex-title">
+          <div class="A1">
+            <a href="store.html"> <h2 class="h222">
+             Build your own box
+           </h2></a>
+           </div>
+           <div class="B1">
+            <a href="store.html"> <span class="see-all">
+             See all <span class="top-see"><img src="images/right-arrow (4).png"></span>
+           </span></a>
+           </div>
+  
+        </div>
+       
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+            <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
+          <div class="item-name">Ready to go set</div>
+          <div class="item-price">N15000</div>
+          </div>
+
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
+          <div class="item-name">Men welcome set</div>
+          <div class="item-price">N25000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
+          <div class="item-name">Welcome set</div>
+          <div class="item-price">N20000</div>
+          </div>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="product-mainpage">
+
+          <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+          <div class="item-name">Pregnant mom set</div>
+          <div class="item-price">N23000</div>
+          </div>
+          
+        </div>
+
+      </div>
+      <!-- <div class="new-arrivals">
+        <figure class="suites">
+          <div class="row gy-2">
+            <div class="col-md-4 col-sm-6 col-12">
+             
+             <span class="imgwrap">
+                <a href="#">
+                  <img class="rooms img-fluid" src="images/j21.1.png" alt="new arrrival">
+                </a>
+                  <br>
+                <p class="shirt-name text-center">
+                   
+                 <span class="state">
+                  <div class="text-center">
+                    <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+                  </div>
+                 </span> 
+                </p>
+              </span>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 mx-auto">
+              
+              <div class="new-box">
+               <div class="wrapper">
+                <span class="imgwrap">          
+                  <a href="store.html">
+                    <img class="rooms img-fluid" src="images/money4.png " alt="new arrrival">
+                  </a>
+                    <br>
+                  <p class="shirt-name text-center">
+                    
+                    
+                   <span class="state">
+                    <div class="text-center">
+                      <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+                    </div>
+                   </span>
+                 </p>
+                </span>
+               </div>
+              </div>
+            </div>
+           <div class="col-md-4 col-sm-6 col-12">
+             
+              <span class="imgwrap">
+                <a href="#">
+                  <img class="rooms img-fluid" src="images/bag.png" alt="new arrrival">
+                </a>
+                  <br>
+                <p class="shirt-name text-center">
+                  
+                  
+                    <span class="state">
+                      <div class="text-center">
+                        <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+                      </div>
+                     </span>
+                </p>    
+              </span>
+            </div>
+            <div class="col-md-12 text-center text-white">For more items, visit our <a href="">store</a></div>
+           
+         
+        </figure>
+        
+      </div> -->
+      
+    
+    </div>
+  </div>
+
+</section>
+
+<!-- content on reasons to choose buisness-->
+<!-- <section class="D">
+  <div class="container-fluid">
+    <div class="row pt-5">
+      <div class="col-md-6 col-lg-6 text-center">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/IMG_0036.png"
+                class="slide-preview d-block w-100"
+                alt="..."
+              />
+              <a href="store.html"> <button class="overlay-shop-btn">Shop now</button> </a>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images//IMG_0018.png"
+                class="slide-preview d-block w-100"
+                alt="..."
+              />
+              <a href="store.html"> <button class="overlay-shop-btn">Shop now</button> </a>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images//IMG_1039 (2).png"
+                class="slide-preview d-block w-100"
+                alt="..."
+              />
+              <a href="store.html"> <button class="overlay-shop-btn">Shop now</button> </a>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6 align-self-center">
+  
+        <div class="whyy">
+          <h3 class="why-choose">Why choose Jet x Joe?</h3>
+        </div>
+        <div class="experienced">
+          <h6 class="ex">Unique Designs and Style</h6>
+          <div class="dev-details">
+            Stand out with our unique and stylish products, designed to make
+            a statement and reflect your true identity.
+          </div>
+        </div>
+        <div class="experienced">
+          <h6 class="ex">Quality</h6>
+          <div class="dev-details">
+            Our brand is commited to delivering top-notch, high-quality
+            products that meet and exceed customer expectation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- popular questions and Sub-content for section E-->
+<!-- <section class="E">
+  <div class="container-fluid">
+    <div class="row mt-5 pt-2">
+      <div class="col-md-6 text-center">
+        <div class="">
+          <span class="line2"></span>
+          <h5 class="spec">Popular questions</h5>
+          <span class="line2"></span>
+        </div>
+        <div class="">
+          <h3 class="discover">
+            Discover Frequently <br />asked questions
+          </h3>
+        </div>
+        <div class="">
+         <a href=""
+
+           class="link-nav"
+           data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+          aria-controls="offcanvasWithBothOptions">
+          <button type="button" class="contact-btn">
+            Contact us
+            <img
+            src="images/arrow-narrow-up-right.png"
+            alt="up-right"
+            class="up-right-png"
+            />
+          </button>
+        </a>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 pt-4">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item border-bottom-0">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button show rounded"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                How long does delivery take?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Delivery within Nigeria takes 1-3 days, while International
+                deliveries take maximum of 1 week.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-bottom-0">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed rounded"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Is there International delivery?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Jet x Joe can deliver to anywhere in the World.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-bottom-0">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed rounded"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                What payment method is available?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                We integrated paystack, so all forms of payment methods are available. Card, transfer, bank paymenets, ussd etc....
+              </div>
+            </div>
+          </div>
+   
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="mud row pt-5">
+      <div class="col-md-3 col-sm-4 col-4 align-self-start">
+        <img
+          src="images/logo-jet.png"
+          alt="companylogo"
+          class="jet-logo-footer"
+        />
+      </div>
+      <div class="col-md-3 col-sm-3 col-3">
+        <p>
+          <a class="explore" href="#">Explore</a>
+        </p>
+        <p>
+          <a href="">Contact</a>
+        </p>
+        <p>
+          <a   href="#offcanvasExample" aria-controls="offcanvasExample" data-bs-toggle="offcanvas" >About</a>
+        </p>
+        <!-- href="#offcanvasExample" 
+        aria-controls="offcanvasExample"  data-bs-toggle="offcanvas"
+class="button"
+id="about-btn" -->
+       
+      </div>
+      <div class="mud2 col-md-2 col-sm-3 col-3">
+        <p>
+          <a class="explore" href="#">Links</a>
+        </p>
+        <p>
+          <a href="store.html">Store</a>
+        </p>
+      
+      </div>
+      <div class="col-md-4">
+        <p class="follow-us">Follow us</p>
+        <div class="social-logo mb-5">
+          <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+            <img
+              src="images/Instagram.png"
+              class="social-logo1"
+              alt="Instagram-Logo"
+            />
+          </a>
+          <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+            <img
+              src="images/whatsapp.png"
+              width="24px"
+              alt="whatsapp-icon"
+            />
+          </a>
+        </div>
+        <div class="subscribe form">
+          <p class="sub-news">Subscribe to our mailing List</p>
+          <form id="subscribeformails">
+            <div class="input-group">
+              <input
+              name="subscriber-mail"
+                type="email"
+                class="email-for-deals"
+                id="enter-email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </form>
+          <button  class="subscription-button mt-2" onclick="SubForm()">
+            subscribe
+          </button>
+        </div>
+      </div>
+      <div class="col-md-12 text-center mt-5">
+        <div class="copyright py-3">
+          &copy;2024 Jet & Joe. All rights reserved <br>
+          For a Website design like this, contact 09133516780 or <a href="https://wa.me/message/QYELHNXF2RFDA1">click here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</section>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jet&Joe</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+  <script>
+  function SubForm (){
+      $.ajax({
+          url:'https://api.apispreadsheets.com/data/b5EZF81CkKPP0Vdn/',
+          type:'post',
+          data:$("#subscribeformails").serializeArray(),
+           success: function(){
+            alert("Form Data Submitted :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+      });
+  }
+  </script>
+    <style>
+        .home-nav{
+        border-bottom: 2px solid white;
+      }
+    </style>
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mx-auto section-store">
+   
+    <div class="button" id="scrollToTopBtn" onclick="scrollToTop()"><img src="images/top.png" alt=""></div>
+
+    <div class="navigation-small overlay-small-screen">
+      <div class="sticky-bar">
+        <div class="">
+          <button class="cancel-btn">
+            <img src="images/icon-close.svg" class="cancel-icon" />
+          </button>
+        </div>
+
+        <div>
+          <a class="button" id="home-btn" href="index.html"
+            ><span class="small-icons"
+              ><img src="images/home.png" alt=""
+            /></span>
+            Home</a
+          >
+        </div>
+        <div>
+          <a class="button" id="store-btn" href="store.html"
+            ><span class="small-icons"
+              ><img src="images/fashion.png" alt=""
+            /></span>
+            Store</a
+          >
+        </div>
+        <div>
+          <a class="button" id="contact-btn"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+          aria-controls="offcanvasWithBothOptions"
+            ><span class="small-icons"
+              ><img src="images/contact-us.png" alt=""
+            /></span>
+            Contact</a
+          >
+        </div>
+        <div>
+          <a class="button" id="about-btn" href="#offcanvasExample" 
+          aria-controls="offcanvasExample"  data-bs-toggle="offcanvas"
+            ><span class="small-icons"
+              ><img src="images/information.png" alt=""
+            /></span>
+            About</a
+          >
+        </div>
+        <div class="">
+          <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
+        </div>
+        <div class="logo-jet-box">
+          <img src="images/logo-jet.png" width="150px" />
+        </div>
+      </div>
+    </div>
+    <section class="A">
+      <nav>
+        <div class="nav-container">
+          <div class="nav-box">
+            <div class="nav-logo">
+              <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav">
+            </div>
+            <div class="nav-collapse">
+              <img src="images/menu-button-of-three-horizontal-lines (1).png" alt="logo-brand" class=" button nav-collapse" />
+            </div>
+            <div class="navigations">
+              <div class="nav-logo2">
+                <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2">
+              </div>
+              <!-- <div class="nav-item1">Collections</div> -->
+             
+            </div>
+           
+            <div class="nav-item6">
+              <img
+                src="images/naira-sign.png"
+                alt="avatar"
+                class="naira-image"
+                width="22px"
+              />
+              <span class="total-price-nav"></span>
+            </div>
+            <div class="nav-item7 button">
+                    <img src="images/shopping-bag.png" alt="cart" class="cart-image">
+                    <span class="total-items-in-cart">
+                        0
+                    </span>
+                
+            
+              <!-- <button class="cart-show-hide" id="cart-btn">
+                <img src="images/icon-cart.svg" alt="cart" class="cart-image" />
+              </button> -->
+            </div>
+
+            <div class="small-counter hidden-small-counter"></div>
+            <div class="cart-background hidden-cart">
+              <div class="cart-text">
+                Cart
+                <span class="empty-cart-button button"
+                  >
+                </span>
+              </div>
+              <div class="cart-line"></div>
+              <div class="cart">
+                <div class="cart-header">
+                    <div class="column1">Item</div>
+                    <div class="column2">Unit price</div>
+                    <div class="column3">Units</div>
+                </div>
+                <div class="cart-items">
+                    <!-- render cart items here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal text-center">
+                        Subtotal (0 items): $0
+                    </div>
+                   <a class="no-blue" data-bs-toggle="offcanvas" href="#offcanvasPayment" role="button" aria-controls="offcanvasPayment"><div class="checkout text-center button">
+                       
+                        Proceed to checkout 
+                      </div>
+                    </a>
+                </div>
+            </div>
+          
+            </div>
+           
+            <!-- <div class="small-counter hidden-small-counter"></div>
+             <div class="cart-background hidden-cart">
+    
+      <div class="cart-text">Cart <span class="empty-cart-button button"><img src="images/icon-delete.svg" alt=""> </span></div>
+      <div class="cart-line"></div>
+      <div class="empty-cart empty-cart-hidden"><span class = "empty-text-add">Your cart is empty</span></div>
+      <div class="cart-image-text hidden-cart-selection item-1">
+        
+       
+     
+    
+    </div> -->
+           
+          </div>
+          <div class="nav-new">
+            <div class="nav-item2">
+              <a class="link-nav home-nav" href="index.html">Gift Boxes</a>
+            </div>
+            <div class="nav-item3">
+              <a class="link-nav  " href="store.html">Gift Shop</a>
+            </div>
+            <div class="nav-item4">
+              <a class="link-nav"  href="#offcanvasExample" 
+                aria-controls="offcanvasExample"  data-bs-toggle="offcanvas">Sales</a>
+              <!-- <button class="about-button ">About</button> -->
+            </div>
+            <div class="nav-item5">
+             <a  class="link-nav"
+             data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
+             aria-controls="offcanvasWithBothOptions">About us</a>
+    
+              <!-- <button class="contact-button ">Contact</button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+    </section>
+   <!-- <div class="filter-sort">  
+    <div class="sortbox">
+      <div class="sort-show"><span>Sort <img src="images/sort.png" alt=""></span></div><div class="sort-current">Most recent</div>
+      <div class="sort-values">
+        <div class="lowest button" onclick="sortProductsByPriceLow()"> lowest prices</div>
+        <div class="highest button" onclick="sortProductsByPriceHigh()"> Highest prices</div>
+        <div class="default button" onclick="sortProductsByMostRecent()"> Most recent </div>
+
+
+      </div>
+    </div>
+    <div class="sortbox">
+      <div class="sort-show"><span>Filter <img src="images/sort (1).png" alt=""></span></div><div class="filter-current">All items</div>
+      <div class="sort-values">
+        <div class="all button" onclick="sortProductsByAll()"> All items</div>
+        <div class="tops button" onclick="sortProductsByType('tops')"> Tops </div>
+        <div class="bottom button" onclick="sortProductsByType('bottoms')"> Bottoms </div>
+        <div class="caps button" onclick="sortProductsByType('caps')"> Caps </div>
+
+
+      </div>
+    </div>
+     
+  </div>   -->
+  <section class="section-color">
+    <section class="BG">
+      <p>Home   /  Ready Made Gift Boxes</p>
+      <h1>Ready made Gift Boxes</h1>
+      <p>If you are looking for a boxed gift ready to send, we have done all the hard work for you by curating a handpicked selection of ready made gifts for all those special occasions.  All our gifts are from exciting, eco friendly, independent Nigerian brand.</p>
+    </section>
+  </section>
+<div class="sort-filter">
+  <div class="dropdown">
+    Sort By Price <img src="images/sort.png"> <button class="btn  dropdown-toggle sortBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       Default
+     </button>
+     <ul class="dropdown-menu">
+       <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceLow()">lowest prices</a></li>
+       <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceHigh()">Highest prices</a></li>
+       <li><a class="dropdown-item" href="#" onclick="sortProductsByMostRecent()">Default</a></li>
+ 
+     </ul>
+   </div>
+   <div class="dropdown">
+     Filter <img src="images/sort (1).png"> <button class="btn  dropdown-toggle filterBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        All
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item AllBtn" href="#"  onclick="sortProductsByAll('tops')">All</a></li>
+        <li><a class="dropdown-item TopsBtn" href="#"  onclick="sortProductsByType('tops')">Tops</a></li>
+        <li><a class="dropdown-item BottomsBtn" href="#" onclick="sortProductsByType('bottoms')">Bottoms</a></li>
+        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('caps')">Caps</a></li>
+  
+      </ul>
+    </div>
+</div>
+
+    <section class="absolute-canvas">
+     
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+       <div class="canva-body2">
+        <div class="offcanvas-header">
+          <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">About</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+          <div       
+            class="button-close-about"     
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ><img  src="images/close.png" alt=""></div>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <p>
+              Jet & Joe, a fashion powerhouse, embodies a 
+              blend of sophistication and uniqueness. 
+              Our brand, a hub for style enthusiasts, 
+              
+              curates clothing that transcends trends, 
+              
+              making a bold statement about individual identity. Inspired by modern 
+              aesthetics, Jet & Joe delivers top-notch, high-quality products that redefine contemporary fashion. From exclusive designs to unmatched craftsmanship, each piece reflects our commitment to elevating your wardrobe. Redefine your fashion journey with Jet & Joe.</p>
+              <div class="social-logo mb-3">
+                <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+                  <img
+                    src="images/Instagram.png"
+                    class="social-logo1"
+                    alt="Instagram-Logo"
+                  />
+                </a>
+                <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+                  <img
+                    src="images/whatsapp.png"
+                    width="24px"
+                    alt="whatsapp-icon"
+                  />
+                </a>
+              </div>
+              <div class="mb-5">
+                <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button></a>
+
+
+              </div>
+              <div class="logo-jet-box">
+                <img src="images/logo-jet.png" width="150px">
+          
+                
+               </div>
+            <div>
+         
+              
+             </div>
+          
+        </div>
+       </div>
+      </div>
+    </section>
+    <section class="second-canva">
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="canva-body2">
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">Contact</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+
+            <div class="button-close-about" data-bs-dismiss="offcanvas" aria-label="Close"><img  src="images/close.png" alt=""></div>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <div>
+         
+                <p><span class="green-icon"><img src="images/phone-call.png
+                 " width="20px" height="18px" alt="green-icon" class=""></span>Jethro +2349165972686</p>
+                 <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jetnjoe01@gmail.com</p>
+               </div>
+               <div>
+            
+                 <p><span class="green-icon"><img src="images/phone-call.png
+                  " width="20px" height="18px" alt="green-icon" class=""></span>Joseph +2349050016639</p>
+                  <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jtemioluwa7@gmail.com</p>
+                </div>
+             
+           </div>
+                <div class="social-logo mb-3">
+                  <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+                    <img
+                      src="images/Instagram.png"
+                      class="social-logo1"
+                      alt="Instagram-Logo"
+                    />
+                  </a>
+                  <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+                    <img
+                      src="images/whatsapp.png"
+                      width="24px"
+                      alt="whatsapp-icon"
+                    />
+                  </a>
+                </div>
+                <div class="mb-5">
+                  <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button></a>
+                </div>
+                <div class="logo-jet-box">
+                  <img src="images/logo-jet.png" width="150px">
+            
+                  
+                 </div>
+              <div>
+           
+                
+               </div>
+            
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third-canva">
+     
+   
+      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasPayment" aria-labelledby="offcanvasPayment">
+        
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasPayment">Payment</h5>
+          <!-- <div class="button-close-about" data-bs-dismiss="offcanvas" aria-label="Close"><img  src="images/close.png" alt=""></div> -->
+
+          
+          <div  class=" text-reset close-modal-1" data-bs-dismiss="offcanvas" aria-label="Close"> <img class="button" src="images/close-button.png" alt=""> </div>
+        </div>
+        <div class="offcanvas-body">
+          <section class="payment-form">
+            <form id="paymentForm">
+             <div class="form-group">
+               <div class="note">
+               <div class="note-text">1) Your order wont be processed if the amount paid doesnt match the total amount.</div>
+               <div class="note-text">2)  Our representative will reach out once your order is made</div>
+              
+               </div>
+               <label for="email">Email Address</label>
+               <br>
+               <input type="email" id="email-address" class="longer" placeholder="your receipt will be sent to the email provided" required />
+             </div>
+             <div class="form-group">
+               <label class="mt-2" for="amount">Amount</label>
+               <br>
+               <span class="pricedetailpay1"></span><br>
+               <span class="pricedetailpay"></span>
+               <br>
+       
+               <input type="tel" id="amount" class="longer" required />
+             </div>
+             <div class="form-group">
+               <label class="mt-2" for="first-name" >First Name</label>
+               <br>
+       
+               <input type="text" id="firstName" class="longer" required/>
+             </div>
+             <div class="form-group">
+               <label class="mt-2" for="last-name">Last Name</label>
+               <br>
+       
+               <input type="text" id="lastName"  class="longer" required />
+             </div>
+             <div class="form-group">
+               <label class="mt-2" for="last-name">Phone Number</label>
+               <br>
+       
+               <input type="tel" id="phoneNum" class="longer" required />
+             </div>
+             <div class="form-group">
+               <label class="mt-2" for="Delivery-address">Delivery address</label>
+               <br>
+       
+               <input type="text" id="deliveryAddress" class="longer" required/>
+             </div>
+             <div class="form-submit mt-2">
+               <button class="pay-btn" type="submit" onclick="payWithPaystack()"> Pay </button>
+             </div>
+           </form>
+          </section>
+          
+        </div>
+      </div>
+      
+    </section>
+  
+   <div class="products-list">
+      <div class="products">
+          <!-- render porducts here -->
+      </div>
+    </div>
+
+
+    <footer class="mt-5 footer-store">
+      <div class="container-fluid">
+        <div class="mud row pt-5">
+          <div class="col-md-3 col-sm-4 col-4 align-self-start">
+            <img
+              src="images/logo-jet.png"
+              alt="companylogo"
+              class="jet-logo-footer"
+            />
+          </div>
+          <div class="col-md-3 col-sm-3 col-3">
+            <p>
+              <a class="explore" href="#">Explore</a>
+            </p>
+            <p>
+              <a href="">Contact</a>
+            </p>
+            <p>
+              <a   href="#offcanvasExample" aria-controls="offcanvasExample" data-bs-toggle="offcanvas" >About</a>
+            </p>
+            <!-- href="#offcanvasExample" 
+            aria-controls="offcanvasExample"  data-bs-toggle="offcanvas"
+  class="button"
+  id="about-btn" -->
+           
+          </div>
+          <div class="mud2 col-md-2 col-sm-3 col-3">
+            <p>
+              <a class="explore" href="index.html">Home</a>
+            </p>
+            <p>
+              <a href="store.html">Store</a>
+            </p>
+          
+          </div>
+          <div class="col-md-4">
+            <p class="follow-us">Follow us</p>
+            <div class="social-logo mb-5">
+              <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+                <img
+                  src="images/Instagram.png"
+                  class="social-logo1"
+                  alt="Instagram-Logo"
+                />
+              </a>
+              <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+                <img
+                  src="images/whatsapp.png"
+                  width="24px"
+                  alt="whatsapp-icon"
+                />
+              </a>
+            </div>
+            <div class="subscribe form">
+              <p class="sub-news">Subscribe to our mailing List</p>
+              <form id="subscribeformails">
+                <div class="input-group">
+                  <input
+                  name="subscriber-mail"
+                    type="email"
+                    class="email-for-deals"
+                    id="enter-email"
+                    placeholder="Enter your email"
+                  />
+                </div>
+              </form>
+              <button  class="subscription-button mt-2" onclick="SubForm()">
+                subscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-12 text-center mt-5">
+            <div class="copyright py-3">
+              &copy;2024 Jet & Joe. All rights reserved <br>
+              For a Website design like this, contact 09133516780 or <a href="https://wa.me/message/QYELHNXF2RFDA1">click here</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="payment.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script>
+      const porductsListEl = document.querySelector(".products-list");
+      const seeMoreBtn = document.querySelector(".see-more-btn");
+
+      // seeMoreBtn.addEventListener('click', () => {
+      //     porductsListEl.scrollIntoView({behavior: "smooth"})
+      // })
+  </script>
+    <script src="./products.js"></script>
+    <script src="./app.js"></script>
+    <script src="main.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
