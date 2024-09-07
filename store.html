@@ -29,6 +29,19 @@
         .home-nav{
         border-bottom: 2px solid white;
       }
+      section.BG{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+z-index: 1;
+}
+.BG{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+
+}
     </style>
     <!-- bootstrap file -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -227,9 +240,9 @@
   </div>   -->
   <section class="section-color">
     <section class="BG">
-      <p>Home   /  Ready Made Gift Boxes</p>
-      <h1>Ready made Gift Boxes</h1>
-      <p>If you are looking for a boxed gift ready to send, we have done all the hard work for you by curating a handpicked selection of ready made gifts for all those special occasions.  All our gifts are from exciting, eco friendly, independent Nigerian brand.</p>
+      <p class="nav-text">Home   /  Ready Made Gift Boxes</p>
+      <h1 class="h1-store">Ready made Gift Boxes</h1>
+      <p class="main-detail-store">If you are looking for a boxed gift ready to send, we have done all the hard work for you by curating a handpicked selection of ready made gifts for all those special occasions.  All our gifts are from exciting, eco friendly, independent Nigerian brand.</p>
     </section>
   </section>
 <div class="sort-filter">
@@ -249,10 +262,12 @@
         All
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item AllBtn" href="#"  onclick="sortProductsByAll('tops')">All</a></li>
-        <li><a class="dropdown-item TopsBtn" href="#"  onclick="sortProductsByType('tops')">Tops</a></li>
-        <li><a class="dropdown-item BottomsBtn" href="#" onclick="sortProductsByType('bottoms')">Bottoms</a></li>
-        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('caps')">Caps</a></li>
+        <li><a class="dropdown-item AllBtn" href="#"  onclick="sortProductsByAll('all')">All</a></li>
+        <li><a class="dropdown-item TopsBtn" href="#"  onclick="sortProductsByType('Ready made')">Ready made</a></li>
+        <li><a class="dropdown-item BottomsBtn" href="#" onclick="sortProductsByType('women')">Women</a></li>
+        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('men')">Men</a></li>
+        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('jewellry')">Jewellry</a></li>
+
   
       </ul>
     </div>

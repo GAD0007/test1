@@ -5,7 +5,9 @@ const products = [
     price: 45000,
     instock: 100,
     imgSrc: ["images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
-     type:"tops",
+     type:"Men",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party. "
+
   },
   {
     id: 1,
@@ -17,7 +19,8 @@ const products = [
       sizes: ["M","L","X-L"],
       colors: ["black","grey"],
     },
-     type:"bottoms",
+     type:"Women",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party."
   },
   {
     id: 2,
@@ -29,65 +32,77 @@ const products = [
       sizes: ["M","L","X-L"],
       colors: ["green","blue","black"],
     },
-     type:"tops",
+     type:"Ready made",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party. "
+
   },{
     id: 3,
     name: "$Bag Chaser Tanktop",
     price: 45000,
     instock: 100,
-    imgSrc: ["images/IMG-20240904-WA0025.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
+    imgSrc: ["images/IMG-20240904-WA0028.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black"],
     },
-     type:"tops",
+     type:"Woman",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party. "
+
   },
   ,{
     id: 4,
     name: "Jet&Joe Leather pant",
     price: 65000,
     instock: 100,
-    imgSrc: ["images/IMG-20240904-WA0025.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
+    imgSrc: ["images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["brown"],
     },
-     type:"bottoms",
+     type:"Men",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party. "
+
   },
   ,{
     id: 5,
     name: "Jet&Joe God with me shirt",
     price: 45000,
     instock: 100,
-    imgSrc: ["images/IMG-20240904-WA0025.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
+    imgSrc: ["images/IMG-20240904-WA0028.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black"],
     },
-     type:"tops",
+     type:"Ready made",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party."
+
   },
   {
     id: 6,
     name: "No Lazy Youth",
     price: 45000,
     instock: 100,
-    imgSrc: ["images/IMG-20240904-WA0025.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
+    imgSrc: ["images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg","images/IMG-20240904-WA0028.jpg"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["white","black","mixed"],
     },
-     type:"tops",
+     type:"Men",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party. The kit includes:"
+
   },
   {
     id: 7,
     name: "Hoodie",
     price: 65000,
     instock: 100,
-    imgSrc: ["images/IMG-20240904-WA0025.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
+    imgSrc: ["images/IMG-20240904-WA0028.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["black","brown"],
     },
-     type:"tops",
+     type:"Women",
+     description:"Perfect Gift to brighten anyone's day with this Eco Friendly, Gift Set for Festival or Party Lovers; containing specially selected gifts ideal for your next festival or summer party."
+
   }
 ]

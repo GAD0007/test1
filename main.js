@@ -6,6 +6,15 @@ const aboutBtn= document.getElementById('about-btn')
 
 
 
+function toggleProductDescription(productId) {
+  const description = document.getElementById(`product-description-${productId}`);
+  
+  if (description.style.display === 'none' || description.style.display === '') {
+    description.style.display = 'block';
+  } else {
+    description.style.display = 'none';
+  }
+}
 
 // Array of image paths
 // const images = [
