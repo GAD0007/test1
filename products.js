@@ -11,7 +11,7 @@ const products = [
   },
   {
     id: 1,
-    name: "J£t&J£0 ss24 joggers",
+    name: "Welcome back set",
     price: 65000,
     instock: 100,
     imgSrc: ["images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg","images/IMG-20240904-WA0025.jpg","images/IMG-20240904-WA0028.jpg"],
@@ -24,7 +24,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Jet$Joe ss24 shirt",
+    name: "Thank you set",
     price: 45000,
     instock: 100,
     imgSrc: ["images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg","images/IMG-20240904-WA0025.jpg"],
@@ -37,7 +37,7 @@ const products = [
 
   },{
     id: 3,
-    name: "$Bag Chaser Tanktop",
+    name: "Welcome home set",
     price: 45000,
     instock: 100,
     imgSrc: ["images/IMG-20240904-WA0028.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
@@ -51,10 +51,10 @@ const products = [
   },
   ,{
     id: 4,
-    name: "Jet&Joe Leather pant",
+    name: "Back to school set",
     price: 65000,
     instock: 100,
-    imgSrc: ["images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
+    imgSrc: ["images/IMG-20240904-WA0028.jpg"],
     options: {
       sizes: ["M","L","X-L"],
       colors: ["brown"],
@@ -65,7 +65,7 @@ const products = [
   },
   ,{
     id: 5,
-    name: "Jet&Joe God with me shirt",
+    name: "Pregnant mom set",
     price: 45000,
     instock: 100,
     imgSrc: ["images/IMG-20240904-WA0028.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],
@@ -79,7 +79,7 @@ const products = [
   },
   {
     id: 6,
-    name: "No Lazy Youth",
+    name: "Ready to go gift box",
     price: 45000,
     instock: 100,
     imgSrc: ["images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg","images/IMG-20240904-WA0028.jpg"],
@@ -93,7 +93,7 @@ const products = [
   },
   {
     id: 7,
-    name: "Hoodie",
+    name: "Goodbye gift",
     price: 65000,
     instock: 100,
     imgSrc: ["images/IMG-20240904-WA0028.jpg","images/IMG-20240904-WA0026.jpg","images/IMG-20240904-WA0028.jpg"],

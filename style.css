@@ -1984,6 +1984,7 @@ a {
     cursor: pointer;
 }
 .view-product-btn{
+    cursor: pointer;
     background-color: transparent;
     color: rgb(98, 98, 223);
     border: none;
@@ -2031,6 +2032,7 @@ a {
 .add-to-wishlist{
     position: relative;
     bottom: 15px;
+    font-size: 15px;
 }
 .products .item .item-container .add-to-wishlist {
   background-color: transparent;
@@ -2418,10 +2420,10 @@ a {
         padding: 10px;
     }
     .item-name{
-        font-size: 12px;
+        font-size: 14px;
     }
     .item-price{
-        font-size: 10px;
+        font-size: 14px;
     }
     .smalltitle {
         font-size: 12px;
@@ -2516,12 +2518,17 @@ a {
      
 }
 @media screen and (max-width: 500px) {
+    .add-to-wishlist{
+        position: relative;
+        font-size: 13px;
+        /* bottom: 15px; */
+    }
     h6{
         font-size: 13px !important;
 
     }
     .productname{
-        font-size: 12px;
+        font-size: 14px;
     }
     .view-product-btn{
 font-size: 13px ;

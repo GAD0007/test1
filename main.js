@@ -6,7 +6,40 @@ const aboutBtn= document.getElementById('about-btn')
 
 
 
-
+// Function to handle pop-up display based on URL hash
+function showProductPopup() {
+    const hash = window.location.hash;
+  
+    if (hash && hash.startsWith('#product-')) {
+      // Extract product ID from hash
+      const productId = hash.split('-')[1];
+      const description = document.getElementById(`product-description-${productId}`);
+  
+      if (description) {
+        // Show the pop-up
+        description.style.display = 'block';
+  
+        // Optionally, you can update the history state if needed
+        history.replaceState({ popupOpen: true, productId: productId }, "", hash);
+      }
+    }
+  }
+  
+  // Attach event listener to handle hash change
+  window.addEventListener('load', showProductPopup);
+  window.addEventListener('hashchange', showProductPopup);
+  
+  // Close pop-up and update the hash to remove the product ID when the user closes it
+  function closeProductPopup(productId) {
+    const description = document.getElementById(`product-description-${productId}`);
+    if (description) {
+      description.style.display = 'none';
+    }
+  
+    // Update the URL hash without product ID
+    history.pushState({ popupOpen: false }, "", "store.html");
+  }
+  
 
 // Array of image paths
 // const images = [

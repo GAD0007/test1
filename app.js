@@ -209,91 +209,59 @@ function renderProdcuts(productsArray = products) {
       .map((color) => `<option value="${color}">${color}</option>`)
       .join("");
 
-    productsEl.innerHTML += `
-      <div class="item">
-        <div class="item-container">
-          <div class="item-img">
-           
-            <img src="${product.imgSrc[0]}" alt="${
-      product.name
-    }" id="productImage-${product.id}">
-           
-          </div>
-          <div class="desc">
-           
-            <h5 class="productname">${product.name}</h5>
-            <h6 class="mb-3"><small>&#8358;</small>${product.price}</h6>
-           
-            <button class="view-product-btn" onclick="toggleProductDescription(${
-              product.id
-            })">View Product</button>
-            <div class="product-description" id="product-description-${
-              product.id
-            }" style="display: none;">
-              <div class="description-content">
-              
-               
-          <div class="row">
-          <div class="col-md-6">
-           <div class="carousel-container" id="carousel-container-${
-             product.id
-           }">
-  <div class="carousel" id="carousel-${product.id}">
-    ${product.imgSrc
-      .map(
-        (src, index) => `
-      <img src="${src}" alt="Product Image ${index + 1}" class="carousel-image">
-    `
-      )
-      .join("")}
-  </div>
-  <button class="carousel-button prev" onclick="changeCarouselImage(${
-    product.id
-  }, 'prev')">❮</button>
-  <button class="carousel-button next" onclick="changeCarouselImage(${
-    product.id
-  }, 'next')">❯</button>
-  <p>${
-                  product.detailedDescription ||
-                  "No detailed description available."
-                }</p>
-</div>
-          </div>
-          <div class="col-md-6">
-          <h3>${product.name}</h3>
-          <p>N${product.price}</p>
-          <br/>
-           <form id="quantity-form">
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-        
-      
-        
-    </form>
-    <br/>
-          <div class="add-to-cart2 button" onclick="addToCart(${product.id})">
-             
-              Add to cart
+      productsEl.innerHTML += `
+      <div class="item view-product-btn">
+        <a href="#" onclick="event.preventDefault(); toggleProductDescription(${product.id})">
+          <div class="item-container">
+            <div class="item-img">
+              <img src="${product.imgSrc[0]}" alt="${product.name}" id="productImage-${product.id}">
             </div>
-          <h4>Description</h4>
-          <p>${product.description} </p>
-          <p>The kit includes; </p>
-          <p>item 1<p/>
-          <p>item 2<p/>
-          <p>item 3<p/>
-          <p>item 4<p/>
-          <p>item 5<p/>
-          <p>item 6<p/>
-
-           
+            <div class="desc">
+              <h5 class="productname">${product.name}</h5>
+              <h6 class="mb-3"><small>&#8358;</small>${product.price}</h6>
+            </div>
           </div>
-          </div>
-                
+        </a>
+        <div class="product-description" id="product-description-${product.id}" style="display: none;">
+          <div class="description-content">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="carousel-container" id="carousel-container-${product.id}">
+                  <div class="carousel" id="carousel-${product.id}">
+                    ${product.imgSrc.map((src, index) => `
+                      <img src="${src}" alt="Product Image ${index + 1}" class="carousel-image">
+                    `).join("")}
+                  </div>
+                  <button class="carousel-button prev" onclick="event.stopPropagation(); changeCarouselImage(${product.id}, 'prev')">❮</button>
+                  <button class="carousel-button next" onclick="event.stopPropagation(); changeCarouselImage(${product.id}, 'next')">❯</button>
+                  <p>${product.detailedDescription || "No detailed description available."}</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>${product.name}</h3>
+                <p>N${product.price}</p>
+                <br/>
+                <form id="quantity-form">
+                  <label for="quantity">Quantity:</label>
+                  <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                </form>
+                <br/>
+                <div class="add-to-cart2 button" onclick="addToCart(${product.id})">Add to cart</div>
+                <h4>Description</h4>
+                <p>${product.description}</p>
+                <p>The kit includes:</p>
+                <p>item 1</p>
+                <p>item 2</p>
+                <p>item 3</p>
+                <p>item 4</p>
+                <p>item 5</p>
+                <p>item 6</p>
               </div>
             </div>
           </div>
         </div>
       </div>`;
+    ;
   });
 }
 
