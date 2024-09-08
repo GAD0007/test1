@@ -56,6 +56,8 @@ function sortProductsByType(type) {
   renderProdcuts(filteredProducts);
 }
 
+
+
 function changeProductImage(productId, direction) {
   const product = products.find((item) => item.id === productId);
 
@@ -114,6 +116,11 @@ cartBtn.addEventListener("click", function name(params) {
   }
 });
 
+
+{/* <button class="close-description" onclick="toggleProductDescription(${
+  product.id
+})"><img src="images/icon-close.svg" class="cancel-icon2" /></button> */}
+
 function sortProductsByPriceLow() {
   products.sort((a, b) => a.price - b.price);
   saveSortingState("priceLow");
@@ -132,6 +139,36 @@ function sortProductsByPriceHigh() {
   productsEl.innerHTML = "";
   renderProdcuts();
 }
+function toggleProductDescription(productId) {
+  const description = document.getElementById(`product-description-${productId}`);
+  
+  if (description.style.display === 'none' || description.style.display === '') {
+    description.style.display = 'block';
+    // Update the history state when showing the description
+    history.pushState({ popupOpen: true, productId: productId }, "", `#product-${productId}`);
+  } else {
+    description.style.display = 'none';
+    // Update the history state when hiding the description
+    history.pushState({ popupOpen: false }, "", "");
+  }
+}
+
+// Handle the popstate event to ensure proper navigation
+window.addEventListener('popstate', (event) => {
+  const state = event.state;
+  
+  if (state && state.popupOpen) {
+    const description = document.getElementById(`product-description-${state.productId}`);
+    if (description) {
+      description.style.display = 'block';
+    }
+  } else {
+    const openDescriptions = document.querySelectorAll('[id^="product-description-"]');
+    openDescriptions.forEach(description => {
+      description.style.display = 'none';
+    });
+  }
+});
 
 function sortProductsByMostRecent() {
   resetProductsOrder();
@@ -194,9 +231,8 @@ function renderProdcuts(productsArray = products) {
               product.id
             }" style="display: none;">
               <div class="description-content">
-                <button class="close-description" onclick="toggleProductDescription(${
-                  product.id
-                })"><img src="images/icon-close.svg" class="cancel-icon2" /></button>
+              
+               
           <div class="row">
           <div class="col-md-6">
            <div class="carousel-container" id="carousel-container-${
