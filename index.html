@@ -54,40 +54,7 @@ function SubForm (){
   <div class="sticky-bar">
   <div class=""><button class="cancel-btn"><img src="images/icon-close.svg" class="cancel-icon"></button></div>
 
-    <div><a class="button" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
-    </div>
-  <div>                   <a
-    class="button"
-    id="store-btn"
-    href="store.html"
-    ><span class="small-icons"><img src="images/fashion.png" alt=""></span> Gift Shop</a
-  >   </div>
-  <div>                   <a
-    class="button"
-    id="contact-btn"
   
-    class="link-nav"
-    data-bs-toggle="offcanvas" data-bs-target="" 
-    aria-controls=""
-    ><span class="small-icons"><img src="images/contact-us.png" alt=""></span> Blog</a
-  ></div>
-  <div>                   <a
-    class="button"
-    id="contact-btn"
-  
-    class="link-nav"
-    data-bs-toggle="offcanvas" data-bs-target="" 
-    aria-controls=""
-    ><span class="small-icons"><img src="images/contact-us.png" alt=""></span> Account</a
-  ></div>
-  <div>                  <a
-    href="" 
-              aria-controls=""  data-bs-toggle=""
-    class="button"
-    id="about-btn"
-    
-    ><span class="small-icons"><img src="images/information.png" alt=""></span> About us</a
-  ></div>
   <div class="">
     <a href="store.html"><button class="shop-btn-small">Shop now</button></a>
   </div>
@@ -108,8 +75,66 @@ function SubForm (){
         <div class="nav-logo">
           <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav">
         </div>
-        <div class="nav-collapse">
-          <img src="images/hamburger.png" alt="logo-brand" class=" button nav-collapse" />
+        <div class="nav-collapse-new">
+          <button class="nav-collapse-new" type="button" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <img src="images/hamburger.png" />
+
+          </button> 
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          <div class="new-long-nav">
+            <div class="offcanvas-body">
+              <div ><a class="button" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
+              </div>
+              <div class="mt-3" ><a class="button" id="home-btn" href="store.html"><span class="small-icons"><img src="images/giftbox (1).png" alt=""></span> Gift Boxes</a>
+              </div>
+            <!-- <div class="mt-3">                   <a
+              class="button"
+              id="store-btn"
+              href="store.html"
+              ><span class="small-icons"><img src="images/fashion.png" alt=""></span>
+               Gift Shop</a
+            >   </div> -->
+            <div class="dropdown mt-3" id="store-btn"
+            href="store.html">
+              <button class="no-pad" onclick="toggleDropdown()"><span class="small-icons"><img src="images/shopping-bag (1).png" alt=""></span> Gift Shop <span class="drop-arrow"> <img src="images/down.png"></span></button>
+              <div class="dropdown-content">
+                <a href="#">"Build" your own box </a>
+      
+              </div>
+            </div>
+            <div class="mt-3">                   <a
+              class="button"
+              id="contact-btn"
+            
+              class="link-nav"
+              data-bs-toggle="offcanvas" data-bs-target="" 
+              aria-controls=""
+              ><span class="small-icons"><img src="images/blog (1).png" alt=""></span> Blog</a
+            ></div>
+            <div class="mt-3">                   <a
+              class="button"
+              id="contact-btn"
+            
+              class="link-nav"
+              data-bs-toggle="offcanvas" data-bs-target="" 
+              aria-controls=""
+              ><span class="small-icons"><img src="images/user.png" alt=""></span> Account</a
+            ></div>
+            <div class="mt-3">                  <a
+              href="" 
+                        aria-controls=""  data-bs-toggle=""
+              class="button"
+              id="about-btn"
+              
+              ><span class="small-icons"><img src="images/info.png" alt=""></span> About us</a
+            ></div>
+            </div>
+          </div>
+          </div>
         </div>
         <div class="navigations">
           <div class="nav-logo2">
@@ -121,12 +146,12 @@ function SubForm (){
        
         <div class="nav-item6">
           <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
-           <img src="images/search-interface-symbol (1).png" alt="" class="cart-image" />
+           <img src="images/user (2).png" alt="" class="cart-image" />
           </a>
         </div>
         <div class="nav-item7">
           <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
-           <img src="images/shopping-bag.png" alt="" class="cart-image" />
+           <img src="images/grocery-store.png" alt="" class="cart-image" />
           </a>
         </div>
        
@@ -320,7 +345,7 @@ function SubForm (){
 <!-- content on the services of the brand-->
 <section class="C">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center">
       
      
       <div class="col-md-12 text-start gy-2">
@@ -332,8 +357,8 @@ function SubForm (){
       </div>
      
       <div class="row">
-        <div class="flex-title">
-          <div class="A1">
+        <div class="flex-title mt-4">
+          <div class="A1 ">
             <a href="store.html"> <h2 class="h222">
              All Gift Boxes
            </h2></a>
@@ -349,8 +374,8 @@ function SubForm (){
          <a href="store.html#product-3">
           <div class="product-mainpage">
             <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
-          <div class="item-name">Ready to go set</div>
-          <div class="item-price">N15000</div>
+          <div class="item-name">Welcome home set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
             1 review<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -363,8 +388,8 @@ function SubForm (){
           <div class="product-mainpage">
 
             <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
-            <div class="item-name">Men welcome set</div>
-            <div class="item-price">N25000</div>
+            <div class="item-name">Ready to go gift box</div>
+            <div class="item-price"><small>&#8358;</small>45000</div>
             </div>
          </a>
           
@@ -374,8 +399,8 @@ function SubForm (){
           <div class="product-mainpage">
 
             <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
-            <div class="item-name">Welcome set</div>
-            <div class="item-price">N20000</div>
+            <div class="item-name">Welcome back set</div>
+            <div class="item-price"><small>&#8358;</small>65000</div>
             <div class="add-to-wishlist">
               3 reviews<img src="images/stars (2).png" alt="add to wish list">
             </div>
@@ -389,8 +414,8 @@ function SubForm (){
           <div class="product-mainpage">
 
             <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
-            <div class="item-name">Pregnant mom set</div>
-            <div class="item-price">N23000</div>
+            <div class="item-name">Thank you set</div>
+            <div class="item-price"><small>&#8358;</small>45000</div>
             </div>
          </a>
           
@@ -399,7 +424,7 @@ function SubForm (){
       </div>
      
       
-      <div class="row gy-4">
+      <div class="row">
         <div class="flex-title">
           <div class="A1">
             <a href="store.html"> <h2 class="h222">
@@ -419,8 +444,8 @@ function SubForm (){
 
           <div class="product-mainpage">
             <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
-          <div class="item-name">Ready to go set</div>
-          <div class="item-price">N15000</div>
+          <div class="item-name">Welcome home set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
             1 review<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -434,8 +459,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
-          <div class="item-name">Men welcome set</div>
-          <div class="item-price">N25000</div>
+          <div class="item-name">Ready to go gift box</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           </div>
          </a>
           
@@ -446,8 +471,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
-          <div class="item-name">Welcome set</div>
-          <div class="item-price">N20000</div>
+          <div class="item-name">Welcome back set</div>
+          <div class="item-price"><small>&#8358;</small>65000</div>
           </div>
          </a>
           
@@ -458,8 +483,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
-          <div class="item-name">Pregnant mom set</div>
-          <div class="item-price">N23000</div>
+          <div class="item-name">Thank you set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
             3 reviews<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -476,7 +501,7 @@ function SubForm (){
           </h2>
         </div>
       </div>
-      <div class="row gy-4">
+      <div class="row mt-3">
         <div class="flex-title">
           <div class="A1">
             <a href="store.html"> <h2 class="h222">
@@ -496,8 +521,8 @@ function SubForm (){
 
           <div class="product-mainpage">
             <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
-          <div class="item-name">Ready to go set</div>
-          <div class="item-price">N15000</div>
+          <div class="item-name">Welcome home set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           </div>
          </a>
 
@@ -508,8 +533,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
-          <div class="item-name">Men welcome set</div>
-          <div class="item-price">N25000</div>
+          <div class="item-name">Ready to go gift box</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
             2 reviews<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -523,8 +548,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
-          <div class="item-name">Welcome set</div>
-          <div class="item-price">N20000</div>
+          <div class="item-name">Welcome back set</div>
+          <div class="item-price"><small>&#8358;</small>65000</div>
           </div>
          </a>
           
@@ -535,8 +560,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
-          <div class="item-name">Pregnant mom set</div>
-          <div class="item-price">N23000</div>
+          <div class="item-name">Thank you set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
             1 review<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -553,7 +578,7 @@ function SubForm (){
         </div>
       </div>
      
-      <div class="row gy-4">
+      <div class="row mt-3">
         <div class="flex-title">
           <div class="A1">
             <a href="store.html"> <h2 class="h222">
@@ -573,8 +598,8 @@ function SubForm (){
 
           <div class="product-mainpage">
             <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
-          <div class="item-name">Ready to go set</div>
-          <div class="item-price">N15000</div>
+          <div class="item-name">Welcome home set</div>
+          <div class="item-price">N45000</div>
           </div>
          </a>
 
@@ -585,8 +610,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
-          <div class="item-name">Men welcome set</div>
-          <div class="item-price">N25000</div>
+          <div class="item-name">Ready to go gift box</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           </div>
          </a>
 
@@ -598,8 +623,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
-          <div class="item-name">Welcome set</div>
-          <div class="item-price">N20000</div>
+          <div class="item-name">Welcome back set</div>
+          <div class="item-price"><small>&#8358;</small>65000</div>
           <div class="add-to-wishlist">
             3 reviews<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -613,18 +638,18 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
-          <div class="item-name">Pregnant mom set</div>
-          <div class="item-price">N23000</div>
+          <div class="item-name">Thank you set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           </div>
         </a>
 
       </div>
      
-      <div class="row gy-4">
+      <div class="row">
         <div class="flex-title">
           <div class="A1">
             <a href="store.html"> <h2 class="h222">
-             Build your own box
+             "Build" your own box
            </h2></a>
            </div>
            <div class="B1">
@@ -638,8 +663,8 @@ function SubForm (){
         <div class="col-md-3 col-6">
           <div class="product-mainpage">
             <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
-          <div class="item-name">Ready to go set</div>
-          <div class="item-price">N15000</div>
+          <div class="item-name">Welcome home set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
             1 review<img src="images/stars (2).png" alt="add to wish list">
           </div>
@@ -650,8 +675,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
-          <div class="item-name">Men welcome set</div>
-          <div class="item-price">N25000</div>
+          <div class="item-name">Ready to go gift box</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           </div>
           
         </div>
@@ -659,8 +684,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
-          <div class="item-name">Welcome set</div>
-          <div class="item-price">N20000</div>
+          <div class="item-name">Welcome back set</div>
+          <div class="item-price"><small>&#8358;</small>65000</div>
           </div>
           
         </div>
@@ -668,8 +693,8 @@ function SubForm (){
           <div class="product-mainpage">
 
           <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
-          <div class="item-name">Pregnant mom set</div>
-          <div class="item-price">N23000</div>
+          <div class="item-name">Thank you set</div>
+          <div class="item-price"><small>&#8358;</small>45000</div>
           </div>
           
         </div>
@@ -746,6 +771,32 @@ function SubForm (){
     </div>
   </div>
 
+</section>
+<section class="blog-section pt-4">
+  <div><h2 class="h222 mb-3">Blog Posts</h2></div>
+  <div class="row gy-4">
+    <div class="col-md-4 col-6">
+      <img class="img-fluid blog-pic " src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+      <div class="Blog-date py-2">September 07, 2024</div>
+      <h2 class="h2222">Best Selling Eco-friendly Valentines Gifts</h2>
+      <div class="Blog-snippet py-2">The market for sustainable gifts is booming. We have a great choice of green Valentines gifts perfect to spoil your...</div>
+      <div><a href="" class="read-more">Read more</a></div>
+    </div>
+    <div class="col-md-4 col-6">
+      <img class="img-fluid blog-pic " src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+      <div class="Blog-date py-2">September 07, 2024</div>
+      <h2 class="h2222">Best Selling Eco-friendly Valentines Gifts</h2>
+      <div class="Blog-snippet py-2">The market for sustainable gifts is booming. We have a great choice of green Valentines gifts perfect to spoil your...</div>
+      <div><a href="" class="read-more">Read more</a></div>
+    </div>
+    <div class="col-md-4 col-6">
+      <img class="img-fluid blog-pic " src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+      <div class="Blog-date py-2">September 07, 2024</div>
+      <h2 class="h2222">Best Selling Eco-friendly Valentines Gifts</h2>
+      <div class="Blog-snippet py-2">The market for sustainable gifts is booming. We have a great choice of green Valentines gifts perfect to spoil your...</div>
+      <div><a href="" class="read-more">Read more</a></div>
+    </div>
+  </div>
 </section>
 
 <!-- content on reasons to choose buisness-->
@@ -1020,8 +1071,7 @@ id="about-btn" -->
       </div>
       <div class="col-md-12 text-center mt-5">
         <div class="copyright py-3">
-          &copy;2024 Jet & Joe. All rights reserved <br>
-          For a Website design like this, contact 09133516780 or <a href="https://wa.me/message/QYELHNXF2RFDA1">click here</a>
+          &copy;2024 Rosy Robin. All rights reserved <br>
         </div>
       </div>
     </div>

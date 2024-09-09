@@ -71,7 +71,7 @@ section.A{
     height: auto;
     position: sticky;
     top: -10px;
-   z-index: 1000;
+   z-index: 999;
    padding-top: 5px;
    background-color: rgb(255, 255, 255);
    /* background-image: url(images/jet-BG-top.jpg); */
@@ -119,6 +119,19 @@ padding-bottom: 20px;
     height: 20px;
     z-index: 1000000;
 } */
+ .item-price{
+    color: #6b6c77;
+ }
+ .read-more{
+    color: #4b4848 !important;
+    text-decoration: underline !important;
+ }
+ .blog-section{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+
+ }
 .main-page{
 position: absolute;
     background-color: transparent;
@@ -358,6 +371,11 @@ z-index: -10;
 
     /* transition: 10s ease */
 }
+
+.main-detail-store{
+    font-size: 15px;
+    color:  #6b6c77;
+}
 .contact-btn{
     background-color: rgb(86, 209, 86);
     padding: 5px 10px;
@@ -500,8 +518,13 @@ width: 150px;
 }
 .h222{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.4666em;
 }
+.h2222{
+    font-size: 1.2666em;
+    font-weight: 500;
+}
+
 .top-see{
     /* margin: 50px;
      */
@@ -517,6 +540,57 @@ a{
     border: 1px solid rgb(245, 194, 194);
     border-radius: 10px;
 }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-left: 0px !important;
+
+      }
+  
+      /* Dropdown button styling */
+      .dropdown button {
+        /* padding: 10px; */
+        /* font-size: 16px; */
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        margin-left: 0px;
+      }
+      .drop-arrow{
+        position: relative;
+        left: 40px;
+      }
+  .no-pad{
+    padding-left: 0px !important;
+  }
+      /* Initially hide the dropdown content */
+      .dropdown-content {
+        display: none;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        /* padding: 12px 16px; */
+        /* margin-top: 10px; Adds space between the button and dropdown */
+      }
+  
+      /* Show dropdown when open */
+      .dropdown.open .dropdown-content {
+        display: block;
+      }
+  
+      /* Dropdown items styling */
+      .dropdown-content a {
+        color: black;
+        padding: 8px 12px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+  
 .talk{   
     color: white;
     background-color: #4046FF;
@@ -1339,9 +1413,18 @@ button.accordion-button{
 
 
 }
-.nav-collapse{
+.new-long-nav{
+    background-color: rgb(255, 255, 255);
+    height:100vh ;
+}
+/* .offcanvas-start{
+    height: 100vh !important;
+} */
+.nav-collapse-new{
+    background-color: transparent;
+    border: none;
     display: none;
-    position: absolute;
+    position: absolute;;
     left: 5%;
     top: 15%;
 
@@ -1698,7 +1781,7 @@ a {
     display: flex;
     position: sticky;
     top: 150px;
-    z-index: 200000;
+    /* z-index: 200000; */
     background-color: rgb(212, 165, 78);
 
 }
@@ -1792,7 +1875,7 @@ a {
     position: relative;
   width: 100%;
   /* height: 230px; */
-  border-radius: 0px 0px 0 0;
+  border-radius: 15px 15px 0px 0px ;
   border: 1px solid rgb(245, 194, 194);
 
   /* filter: drop-shadow(30px 10px 4px #ddd); */
@@ -1835,7 +1918,7 @@ a {
   /* height: 300px; */
   background-color: transparent;
 
-  border-radius: 25px;
+  border-radius: 15px;
 
   position: relative;
 }
@@ -1895,7 +1978,7 @@ a {
 .link-nav {
         display: block;
         padding: 0.1rem 1rem;
-        color: #1b1b1a;
+        color:  #6b6c77 !important;
         text-decoration: none;
         border-bottom: 2px solid transparent;
 
@@ -1966,7 +2049,9 @@ a {
 }
 
 .offcanvas-start{
-    height: fit-content !important;
+    /* height: fit-content !important; */
+    max-width: 60% !important;
+    
 }
 .new-arrivals{
  width: 100%;
@@ -1979,7 +2064,17 @@ a {
 }
 
 
-
+.blog-pic{
+    border-radius: 10px;
+    width: 100%;
+    height: 250px !important;}
+.Blog-snippet{
+    font-size: 14px;
+   color:  #6b6c77;
+}
+.Blog-date{
+    color: #6b6c77;
+}
 .button-close-about{
     cursor: pointer;
 }
@@ -1995,7 +2090,7 @@ a {
 }
 .offcanvas{
     background-color: red;
-    z-index: 300000 !important;
+    z-index: 500000 !important;
 }
 .desc{
     position: relative;
@@ -2086,6 +2181,7 @@ a {
 }
 .offcanvas-body{
   max-height: calc(200vh - 447px);
+  /* width: 250px; */
 
 }
 /* cart items */
@@ -2198,6 +2294,7 @@ a {
     position: relative;
 }
 .item-name{
+    color: #6b6c77;
     /* position: absolute; */
     /* top: 1px; */
 }
@@ -2353,6 +2450,25 @@ a {
   }
 }
 @media screen and (max-width: 570px) {
+    .read-more{
+        font-size: 12px;
+        color: #4b4848 !important;
+        text-decoration: underline !important;
+     }
+    .h2222{
+        font-size: 15px;
+    }
+    .Blog-snippet{
+        font-size: 12px;
+       color:  #6b6c77;
+    }
+    .Blog-date{
+        color: #6b6c77;;
+        font-size: 13px !important;
+    }
+    .blog-pic{
+        width: 100%;
+        height: 160px !important;}
     .carousel-image{
         height: 300px !important;
       }
@@ -2416,7 +2532,7 @@ a {
       .info-sign {
         background-color: rgb(96, 117, 96);
         color: white;
-        font-size: 8px !important;
+        font-size: 10px !important;
         padding: 10px;
     }
     .item-name{
@@ -2627,14 +2743,14 @@ font-size: 13px ;
         font-size: 20px;
     }
     .main-detail-store{
-        font-size: 15px;
+        font-size: 14px;
     }
     .sort-filter{
         /* visibility:hidden; */
         display: flex;
         position: sticky;
         top: 100px;
-        z-index: 200000;
+        z-index: 1000;
         background-color: white;
     
     }
@@ -2662,7 +2778,7 @@ font-size: 13px ;
         top: 15%;
     
     }
-    .nav-collapse{
+    .nav-collapse-new{
         display: block;
         position: absolute;
         left: 5%;
@@ -2807,7 +2923,7 @@ z-index: 1;
     .info-sign {
         background-color: rgb(96, 117, 96);
         color: white;
-        font-size: 10px;
+        font-size: 12px;
         padding: 10px;
     }
 .experienced{
@@ -2876,7 +2992,7 @@ z-index: 1;
         border-bottom: none !important;
         color: rgb(50, 50, 65);
         transition: 0.5s ease;
-        font-weight: bold;
+        /* font-weight: bold; */
         /* margin-bottom: 20px; */
         /* font-weight: 1.9rem; */
         

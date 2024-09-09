@@ -9,6 +9,14 @@ const aboutBtn= document.getElementById('about-btn')
 // Function to handle pop-up display based on URL hash
 // Function to handle pop-up display based on URL hash
 // Function to handle pop-up display based on URL hash
+function toggleDropdown() {
+  var dropdown = document.querySelector('.dropdown');
+  if (dropdown.classList.contains('open')) {
+    dropdown.classList.remove('open');
+  } else {
+    dropdown.classList.add('open');
+  }
+}
 function showProductPopup() {
     const hash = window.location.hash;
     const storeContent = document.getElementById('store-content');
