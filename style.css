@@ -2736,6 +2736,11 @@ font-size: 13px ;
     }
 
 @media screen and (max-width: 700px) {
+    section.A{ 
+        height: auto;
+        position: sticky;
+        top: 0px;
+    }
     .nav-text{
         font-size: 12px ;
 
