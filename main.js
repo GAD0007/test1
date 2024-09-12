@@ -5,6 +5,21 @@ const contactBtn= document.getElementById('contact-btn')
 const aboutBtn= document.getElementById('about-btn')
 
 
+let modalShown = false; // Variable to track if the modal has been shown
+
+window.addEventListener('scroll', function() {
+    const overlay = document.getElementById('scroll-overlay');
+    if (window.scrollY >= 500 && !modalShown) {
+        overlay.classList.remove('hidden-modal');
+        overlay.style.display = 'block';
+        modalShown = true; // Set the flag to true after showing the modal
+    }
+});
+
+// Close modal when the close button is clicked
+document.querySelector('.close-scroll-modal').addEventListener('click', function() {
+    document.getElementById('scroll-overlay').style.display = 'none';
+});
 
 // Function to handle pop-up display based on URL hash
 // Function to handle pop-up display based on URL hash

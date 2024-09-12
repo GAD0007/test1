@@ -41,6 +41,27 @@ function SubForm (){
   
   
   <body class="mx-auto">
+    <div id="scroll-overlay" class="scroll-overlay hidden-modal">
+      <div class="scroll-modal-content">
+          <span class="close-scroll-modal">&times;</span>
+          <h2 class="Newsletter">Subscribe to our Newsletter</h2>
+          <p class="Newsletter-text"> Get the latest updates and offers directly in your inbox.</p>
+          <form id="subscribeformails">
+            <div class="input-group">
+              <input
+              name="subscriber-mail"
+                type="email"
+                class="email-for-deals"
+                id="enter-email"
+                placeholder="Enter your email"
+              />
+              <button  class="subscription-button" onclick="SubForm()">
+                subscribe
+              </button>
+            </div>
+          </form>
+      </div>
+  </div>
     
     <div class="boxxx">
       <div class="info-sign text-center">
@@ -146,12 +167,12 @@ function SubForm (){
         </div>
        
         <div class="nav-item6">
-          <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
+          <a class="cart-show-hide blinking-text" id="cart-btn" href="account.html">
            <img src="images/user (2).png" alt="" class="cart-image" />
           </a>
         </div>
         <div class="nav-item7">
-          <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
+          <a class="cart-show-hide blinking-text" id="cart-btn" href="">
            <img src="images/grocery-store.png" alt="" class="cart-image" />
           </a>
         </div>
@@ -886,7 +907,7 @@ function SubForm (){
   </div>
 </section> -->
 <!-- popular questions and Sub-content for section E-->
-<!-- <section class="E">
+<section class="E">
   <div class="container-fluid">
     <div class="row mt-5 pt-2">
       <div class="col-md-6 text-center">
@@ -899,22 +920,6 @@ function SubForm (){
           <h3 class="discover">
             Discover Frequently <br />asked questions
           </h3>
-        </div>
-        <div class="">
-         <a href=""
-
-           class="link-nav"
-           data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" 
-          aria-controls="offcanvasWithBothOptions">
-          <button type="button" class="contact-btn">
-            Contact us
-            <img
-            src="images/arrow-narrow-up-right.png"
-            alt="up-right"
-            class="up-right-png"
-            />
-          </button>
-        </a>
         </div>
       </div>
       <div class="col-md-6 col-sm-12 pt-4">
@@ -929,7 +934,7 @@ function SubForm (){
                 aria-expanded="false"
                 aria-controls="flush-collapseOne"
               >
-                How long does delivery take?
+               Refund Policy
               </button>
             </h2>
             <div
@@ -939,8 +944,7 @@ function SubForm (){
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Delivery within Nigeria takes 1-3 days, while International
-                deliveries take maximum of 1 week.
+               Our refund policy guarantees a refund within 2 days of purchase
               </div>
             </div>
           </div>
@@ -954,7 +958,7 @@ function SubForm (){
                 aria-expanded="false"
                 aria-controls="flush-collapseTwo"
               >
-                Is there International delivery?
+                Payment
               </button>
             </h2>
             <div
@@ -964,7 +968,7 @@ function SubForm (){
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                Jet x Joe can deliver to anywhere in the World.
+                We offer seamlesss and secure payment methods that supports 24/7 transactions via paystack
               </div>
             </div>
           </div>
@@ -978,7 +982,7 @@ function SubForm (){
                 aria-expanded="false"
                 aria-controls="flush-collapseThree"
               >
-                What payment method is available?
+               Shipping
               </button>
             </h2>
             <div
@@ -988,7 +992,7 @@ function SubForm (){
               data-bs-parent="#accordionFlushExample"
             >
               <div class="accordion-body">
-                We integrated paystack, so all forms of payment methods are available. Card, transfer, bank paymenets, ussd etc....
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero expedita repudiandae, nam, nostrum tempore tempora, voluptatum aut quidem temporibus sed facere fugit minima inventore. Dignissimos adipisci sint enim fuga eaque.
               </div>
             </div>
           </div>
@@ -997,7 +1001,7 @@ function SubForm (){
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <footer>
   <div class="container-fluid">

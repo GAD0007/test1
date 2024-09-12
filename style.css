@@ -67,6 +67,54 @@ header.two{
     margin-top: 20px;
 }
 
+/* Black overlay */
+.scroll-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    display: none;
+    z-index: 999; /* Ensure it appears above other elements */
+}
+
+/* Modal box */
+.scroll-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(96, 117, 96);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure it's above the overlay */
+}
+.Newsletter-text{
+    color: white;
+    font-size: 13px;
+}
+.Newsletter{
+    color: white;
+    font-size: 20px;
+}
+
+/* Close button */
+.close-scroll-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hidden state */
+.hidden-modal {
+    display: none;
+}
+
 section.A{
     height: auto;
     /* position: sticky; */
@@ -1280,14 +1328,16 @@ section.E{
     padding-top: 1vw;
 
     position: relative;
+    background-color: white;
     /* bottom:20px; */
-    background:linear-gradient(
+    /* background:linear-gradient(
         135deg,
         rgba(198, 235, 208, 0.96),
         rgba(193, 171, 233, 0.96)
-      );
+      ); */
 
 }
+
 
 .get-in-touch{
     margin-top: 20px;
@@ -1353,19 +1403,19 @@ section.E{
 button.accordion-button{
     background:linear-gradient(
         135deg,
-        rgba(198, 201, 159, 0.96),
-        rgba(231, 183, 183, 0.96)
+        rgb(96, 117, 96),
+        rgb(96, 117, 96)
         );
         font-size: small;  
         font-weight: bold;
-        color: rgb(0, 0, 0);
+        color: rgb(233, 226, 226);
         height: 47px;       
         
     }
     
       button.accordion-button:not(.collapsed){
         background: rgb(255, 255, 255);
-        color: blue;  
+        color:rgb(96, 117, 96);  
         font-size: small;
         height: 47px;    
         box-shadow: 2px 5px 20px rgb(222, 222, 222);
