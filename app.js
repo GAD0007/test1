@@ -256,6 +256,9 @@ function renderProdcuts(productsArray = products) {
                 <p>item 4</p>
                 <p>item 5</p>
                 <p>item 6</p>
+                <p>item 7</p>
+                <p>item 8</p>
+                <p>item 9</p>
               </div>
             </div>
           </div>

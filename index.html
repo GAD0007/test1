@@ -28,36 +28,7 @@ function SubForm (){
 }
 </script>
     <style>
-      .image-container {
-    position: relative;
-    width: 100%; /* Adjust based on your layout */
-    height: auto; /* Adjust based on your layout */
-}
-
-.more-pic {
-    display: block;
-    width: 100%; /* Adjust based on your layout */
-    height: auto; /* Adjust based on your layout */
-    transition: opacity 0.3s ease;
-}
-
-.hover-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.image-container:hover .more-pic {
-    opacity: 0;
-}
-
-.image-container:hover .hover-img {
-    opacity: 1;
-}
+   
 
       .home-nav{
         border-bottom: 2px solid white;
@@ -72,6 +43,8 @@ function SubForm (){
   
   
   <body class="mx-auto">
+   
+    
  
     
     <div class="boxxx">
@@ -406,7 +379,11 @@ function SubForm (){
         <div class="col-md-3 col-6">
          <a href="store.html#product-3">
           <div class="product-mainpage">
-            <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
+            <div class="image-container">
+              <img class="img-fluid more-pic hover-img" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg" alt="Alternate Image">
+              <img class="img-fluid more-pic"
+              src="images/IMG-20240904-WA0028.jpg" alt="Product Image">
+          </div>
           <div class="item-name">Welcome home set</div>
           <div class="item-price"><small>&#8358;</small>45000</div>
           <div class="add-to-wishlist">
@@ -419,8 +396,11 @@ function SubForm (){
         <div class="col-md-3 col-6">
          <a href="store.html#product-0">
           <div class="product-mainpage">
-
-            <img class="img-fluid more-pic" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg"> 
+            <div class="image-container">
+              <img class="img-fluid more-pic hover-img" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg" alt="Alternate Image">
+              <img class="img-fluid more-pic"
+              src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg" alt="Product Image">
+          </div>
             <div class="item-name">Ready to go gift box</div>
             <div class="item-price"><small>&#8358;</small>45000</div>
             </div>
@@ -432,7 +412,7 @@ function SubForm (){
             <div class="product-mainpage">
                 <div class="image-container">
                     <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg" alt="Product Image">
-                    <img class="img-fluid more-pic hover-img" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg" alt="Alternate Image">
+                    <img class="img-fluid more-pic hover-img" src="images/IMG-20240904-WA0028.jpg" alt="Alternate Image">
                 </div>
                 <div class="item-name">Welcome back set</div>
                 <div class="item-price"><small>&#8358;</small>65000</div>
@@ -447,8 +427,12 @@ function SubForm (){
         <div class="col-md-3 col-6">
          <a href="store.html#product-2">
           <div class="product-mainpage">
+            <div class="image-container">
+              <img class="img-fluid more-pic"  src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg" alt="Product Image">
+              <img class="img-fluid more-pic hover-img" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg" alt="Alternate Image">
+          </div>
 
-            <img class="img-fluid more-pic" src="images/replenish-and-restore-new-mom-gift-box-nursing-cover (1).jpg"> 
+     
             <div class="item-name">Thank you set</div>
             <div class="item-price"><small>&#8358;</small>45000</div>
             </div>
@@ -635,6 +619,9 @@ function SubForm (){
             <img class="img-fluid more-pic" src="images/IMG-20240904-WA0028.jpg"> 
           <div class="item-name">Welcome home set</div>
           <div class="item-price">N45000</div>
+          <div class="add-to-wishlist">
+            5 reviews<img src="images/stars (2).png" alt="add to wish list">
+          </div>
           </div>
          </a>
 
@@ -923,7 +910,7 @@ function SubForm (){
 <section class="E">
   <div class="container-fluid">
     <div class="row mt-5 pt-2">
-      <div class="col-md-6 text-center">
+      <div class="col-md-6 text-center mt-4">
         <div class="">
           <span class="line2"></span>
           <h5 class="spec">Popular questions</h5>
