@@ -28,6 +28,37 @@ function SubForm (){
 }
 </script>
     <style>
+      .image-container {
+    position: relative;
+    width: 100%; /* Adjust based on your layout */
+    height: auto; /* Adjust based on your layout */
+}
+
+.more-pic {
+    display: block;
+    width: 100%; /* Adjust based on your layout */
+    height: auto; /* Adjust based on your layout */
+    transition: opacity 0.3s ease;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .more-pic {
+    opacity: 0;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+}
+
       .home-nav{
         border-bottom: 2px solid white;
       }
@@ -41,27 +72,7 @@ function SubForm (){
   
   
   <body class="mx-auto">
-    <div id="scroll-overlay" class="scroll-overlay hidden-modal">
-      <div class="scroll-modal-content">
-          <span class="close-scroll-modal">&times;</span>
-          <h2 class="Newsletter">Subscribe to our Newsletter</h2>
-          <p class="Newsletter-text"> Get the latest updates and offers directly in your inbox.</p>
-          <form id="subscribeformails">
-            <div class="input-group">
-              <input
-              name="subscriber-mail"
-                type="email"
-                class="email-for-deals"
-                id="enter-email"
-                placeholder="Enter your email"
-              />
-              <button  class="subscription-button" onclick="SubForm()">
-                subscribe
-              </button>
-            </div>
-          </form>
-      </div>
-  </div>
+ 
     
     <div class="boxxx">
       <div class="info-sign text-center">
@@ -417,18 +428,20 @@ function SubForm (){
           
         </div>
         <div class="col-md-3 col-6">
-        <a href="store.html#product-1">
-          <div class="product-mainpage">
-
-            <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg"> 
-            <div class="item-name">Welcome back set</div>
-            <div class="item-price"><small>&#8358;</small>65000</div>
-            <div class="add-to-wishlist">
-              3 reviews<img src="images/stars (2).png" alt="add to wish list">
+          <a href="store.html#product-1">
+            <div class="product-mainpage">
+                <div class="image-container">
+                    <img class="img-fluid more-pic" src="images/bachelorette-party-weekend-welcome-gifts-margiold-grey3_copy.jpg" alt="Product Image">
+                    <img class="img-fluid more-pic hover-img" src="images/flat-lay-arrangement-different-colorful-christmas-gifts (1) (1).jpg" alt="Alternate Image">
+                </div>
+                <div class="item-name">Welcome back set</div>
+                <div class="item-price"><small>&#8358;</small>65000</div>
+                <div class="add-to-wishlist">
+                    3 reviews<img src="images/stars (2).png" alt="add to wish list">
+                </div>
             </div>
-            </div>
-
         </a>
+        
           
         </div>
         <div class="col-md-3 col-6">
