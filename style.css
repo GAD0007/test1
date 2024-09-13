@@ -2000,12 +2000,12 @@ a {
   align-items: center;
 }
 .ham-img{
-    display: block;
+    /* display: block;
     position: absolute !important;
     width:  30px !important;
     left: 5%;
     margin-bottom: 10px;
-    border-radius: 0px !important;
+    border-radius: 0px !important; */
 }
 .products .item .item-container .desc {
   width: 100%;
