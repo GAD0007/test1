@@ -412,7 +412,7 @@ function renderProdcuts(productsArray = products) {
                 <div class="carousel-container" id="carousel-container-${product.id}">
                   <div class="carousel" id="carousel-${product.id}">
                     ${product.imgSrc.map((src, index) => `
-                      <img src="${src}"class="productsimages" alt="Product Image ${index + 1}" class="carousel-image">
+                      <img src="${src}" alt="Product Image ${index + 1}" class="carousel-image productsimages">
                     `).join("")}
                   </div>
                   <button class="carousel-button prev" onclick="event.stopPropagation(); changeCarouselImage(${product.id}, 'prev')">❮</button>
