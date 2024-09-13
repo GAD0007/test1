@@ -225,6 +225,183 @@ function renderProdcuts(productsArray = products) {
         <div class="product-description" id="product-description-${product.id}" style="display: none;">
           <div class="description-content">
             <div class="row">
+             <section class="A">
+      <nav>
+        <div class="nav-container">
+          <div class="nav-box">
+            <div class="nav-logo">
+              <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav ham-img">
+            </div>
+            <div class="nav-collapse-new">
+              <button class="nav-collapse-new" type="button" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="images/hamburger.png" class="ham-img" />
+    
+              </button> 
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+              <div class="new-long-nav">
+                <div class="offcanvas-body">
+                  <div ><a class="button" id="home-btn" href="./index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
+                  </div>
+                  <div class="mt-3" ><a class="button" id="home-btn" href="store.html"><span class="small-icons"><img src="images/giftbox (1).png" alt=""></span> Gift Boxes</a>
+                  </div>
+                <!-- <div class="mt-3">                   <a
+                  class="button"
+                  id="store-btn"
+                  href="store.html"
+                  ><span class="small-icons"><img src="images/fashion.png" alt=""></span>
+                   Gift Shop</a
+                >   </div> -->
+                <div class="dropdown mt-3" id="store-btn"
+                href="store.html">
+                  <button class="no-pad" onclick="toggleDropdown()"><span class="small-icons"><img src="images/shopping-bag (1).png" alt=""></span> Gift Shop <span class="drop-arrow"> <img src="images/down.png"></span></button>
+                  <div class="dropdown-content">
+                    <a href="#">"Build" your own box </a>
+          
+                  </div>
+                </div>
+                <div class="mt-3">                   <a
+                  class="button"
+                  id="contact-btn"
+                
+                  class="link-nav"
+                  data-bs-toggle="offcanvas" data-bs-target="" 
+                  aria-controls=""
+                  ><span class="small-icons"><img src="images/blog (1).png" alt=""></span> Blog</a
+                ></div>
+                <div class="mt-3">                   <a
+                  class="button"
+                  id="contact-btn"
+                
+                  class="link-nav"
+                  data-bs-toggle="offcanvas" data-bs-target="" 
+                  aria-controls=""
+                  ><span class="small-icons"><img src="images/user.png" alt=""></span> Account</a
+                ></div>
+                <div class="mt-3">                  <a
+                  href="" 
+                            aria-controls=""  data-bs-toggle=""
+                  class="button"
+                  id="about-btn"
+                  
+                  ><span class="small-icons"><img src="images/info.png" alt=""></span> About us</a
+                ></div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="navigations">
+              <div class="nav-logo2">
+                <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2">
+              </div>
+              <!-- <div class="nav-item1">Collections</div> -->
+             
+            </div>
+            <div class="nav-item6">
+              <a class="cart-show-hide blinking-text" id="cart-btn" href="store.html">
+               <img src="images/user (2).png" alt="" class="cart-image" />
+              </a>
+            </div>
+            <div class="nav-item7">
+              <span class="cart-show-hide button blinking-text" id="cart-btn" >
+               <img src="images/grocery-store.png" alt="" class="cart-image" />
+              </span>
+            </div>
+            <!-- <div class="nav-item6">
+              <img
+                src="images/naira-sign.png"
+                alt="avatar"
+                class="naira-image"
+                width="22px"
+              />
+              <span class="total-price-nav"></span>
+            </div>
+            <div class="nav-item7 button">
+                    <img src="images/shopping-bag.png" alt="cart" class="cart-image">
+                    <span class="total-items-in-cart">
+                        0
+                    </span>
+                
+            
+               <button class="cart-show-hide" id="cart-btn">
+                <img src="images/icon-cart.svg" alt="cart" class="cart-image" />
+              </button> 
+            </div> -->
+
+            <div class="small-counter hidden-small-counter"></div>
+            <div class="cart-background hidden-cart">
+              <div class="cart-text">
+                Cart
+                <span class="empty-cart-button button"
+                  >
+                </span>
+              </div>
+              <div class="cart-line"></div>
+              <div class="cart">
+                <div class="cart-header">
+                    <div class="column1">Item</div>
+                    <div class="column2">Unit price</div>
+                    <div class="column3">Units</div>
+                </div>
+                <div class="cart-items">
+                    <!-- render cart items here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal text-center">
+                        Subtotal (0 items): $0
+                    </div>
+                   <a class="no-blue" data-bs-toggle="offcanvas" href="#offcanvasPayment" role="button" aria-controls="offcanvasPayment"><div class="checkout text-center button">
+                       
+                        Proceed to checkout 
+                      </div>
+                    </a>
+                </div>
+            </div>
+          
+            </div>
+           
+            <!-- <div class="small-counter hidden-small-counter"></div>
+             <div class="cart-background hidden-cart">
+    
+      <div class="cart-text">Cart <span class="empty-cart-button button"><img src="images/icon-delete.svg" alt=""> </span></div>
+      <div class="cart-line"></div>
+      <div class="empty-cart empty-cart-hidden"><span class = "empty-text-add">Your cart is empty</span></div>
+      <div class="cart-image-text hidden-cart-selection item-1">
+        
+       
+     
+    
+    </div> -->
+           
+          </div>
+          <div class="nav-new">
+            <div class="nav-item2">
+              <a class="link-nav home-nav" href="index.html">Home</a>
+            </div>
+            <div class="nav-item3">
+              <a class="link-nav  " href="store.html">Gift Shop</a>
+            </div>
+            <div class="nav-item4">
+              <a class="link-nav"  href="" 
+                aria-controls="offcanvasExample"  data-bs-toggle="offcanvas">Account</a>
+              <!-- <button class="about-button ">About</button> -->
+            </div>
+            <div class="nav-item5">
+             <a  class="link-nav"
+             data-bs-toggle="offcanvas" data-bs-target="#" 
+             aria-controls="offcanvasWithBothOptions">About us</a>
+    
+              <!-- <button class="contact-button ">Contact</button> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+    </section>
               <div class="col-md-6">
                 <div class="carousel-container" id="carousel-container-${product.id}">
                   <div class="carousel" id="carousel-${product.id}">
