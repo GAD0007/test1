@@ -1929,6 +1929,7 @@ a {
 }
 .logo-sales{
     height: 70px !important;
+   
 }
 .products img {
     position: relative;
@@ -2700,6 +2701,9 @@ a {
      
 }
 @media screen and (max-width: 500px) {
+    .logo-sales{
+        height: 50px !important;
+    }
     .add-to-wishlist{
         position: relative;
         font-size: 13px;
