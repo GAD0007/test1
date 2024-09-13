@@ -25,9 +25,15 @@ body{
    font-size: 13px;
    padding: 10px;
 }
+.body-pad{
+    padding: 20px;
+
+}
 .back-color{
     padding-left: 4%;
     padding-right: 4%;
+    background-color: rgb(231, 209, 175) !important;
+
    
 }
 .new-c{
@@ -863,7 +869,7 @@ section.F{
     /* padding-bottom: 400px; */
     background: #fff;
     color: #000;
-    padding: 20px;
+    /* padding: 20px; */
     /* border-radius: 10px; */
     width: 100%;
     /* max-width: 800px; */
@@ -938,7 +944,11 @@ section.F{
     cursor: pointer;
     z-index: 1000;
   }
-  
+  .boxxx{
+    position: sticky;
+    top: 0px;
+    z-index: 60000000;
+  }
   .carousel-button.prev {
     left: 0;
   }
@@ -2786,7 +2796,7 @@ font-size: 13px ;
         position: absolute;
         display: flex;
         left: 40%;
-        bottom: -90%;
+        bottom: -40%;
         /* margin-left: 5%; */
         /* padding-bottom: 10px; */
     }

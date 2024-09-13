@@ -228,8 +228,9 @@ function renderProdcuts(productsArray = products) {
         SUSTAINABLE GIFTS | CHAMPIONING NGN INDEPENDENTS | ORDER BEFORE 12 NOON FOR SAME DAY DISPATCH | SIGN UP FOR 15% OFF
       </div>
     </div>
+         <section class="back-color">
           <div class="description-content">
-            <div class="row">
+            
         
              <section class="A">
       <nav>
@@ -408,6 +409,8 @@ function renderProdcuts(productsArray = products) {
 
      
     </section>
+    <div class="body-pad">
+    <div class="row">
               <div class="col-md-6">
                 <div class="carousel-container" id="carousel-container-${product.id}">
                   <div class="carousel" id="carousel-${product.id}">
@@ -444,7 +447,9 @@ function renderProdcuts(productsArray = products) {
                 <p>item 9</p>
               </div>
             </div>
+            </div>
           </div>
+         </section>
         </div>
       </div>`;
     ;
