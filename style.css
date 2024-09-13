@@ -117,7 +117,7 @@ header.two{
 
 section.A{
     height: auto;
-    /* position: sticky; */
+    position: sticky;
     top: -10px;
    z-index:200000;
    padding-top: 5px;
@@ -3131,7 +3131,7 @@ z-index: 1;
     }
     section.A{ 
         height: auto;
-        /* position: sticky; */
+        position: sticky;
         top: 0px;
     }
     h3.why-choose{
@@ -3254,7 +3254,7 @@ z-index: 1;
     
        
         height: auto;
-    /* position: sticky; */
+    position: sticky;
     top: 0px;
     }
     

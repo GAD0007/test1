@@ -225,6 +225,11 @@ function renderProdcuts(productsArray = products) {
         <div class="product-description" id="product-description-${product.id}" style="display: none;">
           <div class="description-content">
             <div class="row">
+            <div class="boxxx">
+      <div class="info-sign text-center">
+        SUSTAINABLE GIFTS | CHAMPIONING NGN INDEPENDENTS | ORDER BEFORE 12 NOON FOR SAME DAY DISPATCH | SIGN UP FOR 15% OFF
+      </div>
+    </div>
              <section class="A">
       <nav>
         <div class="nav-container">
