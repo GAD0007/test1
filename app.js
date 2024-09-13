@@ -230,11 +230,11 @@ function renderProdcuts(productsArray = products) {
         <div class="nav-container">
           <div class="nav-box">
             <div class="nav-logo">
-              <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav">
+              <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav ham-img">
             </div>
             <div class="nav-collapse-new">
               <button class="nav-collapse-new" type="button" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <img src="images/hamburger.png" />
+                <img src="images/hamburger.png" class="ham-img" />
     
               </button> 
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -295,7 +295,7 @@ function renderProdcuts(productsArray = products) {
             </div>
             <div class="navigations">
               <div class="nav-logo2">
-                <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2">
+                <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2 logo-sales">
               </div>
               <!-- <div class="nav-item1">Collections</div> -->
              

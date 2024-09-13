@@ -1927,6 +1927,9 @@ a {
   grid-gap: 30px;
   
 }
+.logo-sales{
+    height: 70px !important;
+}
 .products img {
     position: relative;
   width: 100%;
