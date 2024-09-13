@@ -214,7 +214,7 @@ function renderProdcuts(productsArray = products) {
         <a href="#" onclick="event.preventDefault(); toggleProductDescription(${product.id})">
           <div class="item-container">
             <div class="item-img">
-              <img src="${product.imgSrc[0]}" alt="${product.name}" id="productImage-${product.id}">
+              <img class="productsimages" src="${product.imgSrc[0]}" alt="${product.name}" id="productImage-${product.id}">
             </div>
             <div class="desc">
               <h5 class="productname">${product.name}</h5>
@@ -230,7 +230,7 @@ function renderProdcuts(productsArray = products) {
         <div class="nav-container">
           <div class="nav-box">
             <div class="nav-logo">
-              <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav ham-img">
+              <img src="images/notification.png" alt="logo-brand" class="logo-jet-nav ">
             </div>
             <div class="nav-collapse-new">
               <button class="nav-collapse-new" type="button" role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -295,7 +295,7 @@ function renderProdcuts(productsArray = products) {
             </div>
             <div class="navigations">
               <div class="nav-logo2">
-                <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2 logo-sales">
+                <img src="images/rosy.avif" alt="logo-brand" class="logo-jet-nav-2">
               </div>
               <!-- <div class="nav-item1">Collections</div> -->
              
@@ -406,7 +406,7 @@ function renderProdcuts(productsArray = products) {
                 <div class="carousel-container" id="carousel-container-${product.id}">
                   <div class="carousel" id="carousel-${product.id}">
                     ${product.imgSrc.map((src, index) => `
-                      <img src="${src}" alt="Product Image ${index + 1}" class="carousel-image">
+                      <img src="${src}"class="productsimages" alt="Product Image ${index + 1}" class="carousel-image">
                     `).join("")}
                   </div>
                   <button class="carousel-button prev" onclick="event.stopPropagation(); changeCarouselImage(${product.id}, 'prev')">❮</button>
