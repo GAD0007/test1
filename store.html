@@ -26,17 +26,12 @@
   }
   </script>
     <style>
+     
         .home-nav{
         border-bottom: 2px solid white;
       }
-      section.BG{
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    /* background-color: red; */
-z-index: 1;
-}
-.BG{
+    
+.BG2{
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
@@ -312,39 +307,41 @@ z-index: 1;
      
   </div>   -->
   <section class="section-color">
-    <section class="BG">
+    <section class="BG2">
       <p class="nav-text">Home   /  Ready Made Gift Boxes</p>
       <h1 class="h1-store">Ready made Gift Boxes</h1>
-      <p class="main-detail-store">If you are looking for a boxed gift ready to send, we have done all the hard work for you by curating a handpicked selection of ready made gifts for all those special occasions.  All our gifts are from exciting, eco friendly, independent Nigerian brand.</p>
+      <p class="main-detail-store">If you are looking for a boxed gift ready to send, we have done all the hard work for you by curating a handpicked selection of ready made gifts for all those special occasions.  All our gifts are from exciting, eco friendly, independent Nigerian brand.  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum facilis sunt earum aperiam commodi quod! Labore sit laborum ea numquam aut a? Molestiae nemo eveniet voluptatum. Nam a error modi!  </p>
+      <div class="sort-filter">
+        <div class="dropdown">
+          Sort By Price <img src="images/sort.png"> <button class="btn  dropdown-toggle sortBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Default
+           </button>
+           <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceLow()">lowest prices</a></li>
+             <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceHigh()">Highest prices</a></li>
+             <li><a class="dropdown-item" href="#" onclick="sortProductsByMostRecent()">Default</a></li>
+       
+           </ul>
+         </div>
+         <div class="dropdown">
+           Filter <img src="images/sort (1).png"> <button class="btn  dropdown-toggle filterBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              All
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item AllBtn" href="#"  onclick="sortProductsByAll('all')">All</a></li>
+              <li><a class="dropdown-item TopsBtn" href="#"  onclick="sortProductsByType('Ready made')">Ready made</a></li>
+              <li><a class="dropdown-item BottomsBtn" href="#" onclick="sortProductsByType('women')">Women</a></li>
+              <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('men')">Men</a></li>
+              <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('jewellry')">Jewellry</a></li>
+      
+        
+            </ul>
+          </div>
+      </div> 
     </section>
+    
   </section>
-<div class="sort-filter">
-  <div class="dropdown">
-    Sort By Price <img src="images/sort.png"> <button class="btn  dropdown-toggle sortBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-       Default
-     </button>
-     <ul class="dropdown-menu">
-       <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceLow()">lowest prices</a></li>
-       <li><a class="dropdown-item" href="#" onclick="sortProductsByPriceHigh()">Highest prices</a></li>
-       <li><a class="dropdown-item" href="#" onclick="sortProductsByMostRecent()">Default</a></li>
- 
-     </ul>
-   </div>
-   <div class="dropdown">
-     Filter <img src="images/sort (1).png"> <button class="btn  dropdown-toggle filterBtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        All
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item AllBtn" href="#"  onclick="sortProductsByAll('all')">All</a></li>
-        <li><a class="dropdown-item TopsBtn" href="#"  onclick="sortProductsByType('Ready made')">Ready made</a></li>
-        <li><a class="dropdown-item BottomsBtn" href="#" onclick="sortProductsByType('women')">Women</a></li>
-        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('men')">Men</a></li>
-        <li><a class="dropdown-item CapsBtn" href="#" onclick="sortProductsByType('jewellry')">Jewellry</a></li>
 
-  
-      </ul>
-    </div>
-</div>
 
     <section class="absolute-canvas">
      

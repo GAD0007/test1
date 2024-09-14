@@ -5,6 +5,27 @@ const contactBtn= document.getElementById('contact-btn')
 const aboutBtn= document.getElementById('about-btn')
 
 
+// Get the A-invi element
+const stickyElement = document.querySelector(".A-invi");
+
+// Set the element's initial visibility state to hidden
+let isVisible = false;
+
+window.addEventListener("scroll", function () {
+  // Get the distance from the top of the page to the .A-invi element
+  const elementTop = stickyElement.getBoundingClientRect().top;
+
+  // Check if the .A-invi element has reached the top of the viewport
+  if (elementTop <= 0 && !isVisible) {
+    // If the element is at the top and it's not visible, show it with opacity
+    stickyElement.classList.add("visible");
+    isVisible = true;
+  } else if (elementTop > 0 && isVisible) {
+    // If the element is no longer at the top, hide it by removing the visible class
+    stickyElement.classList.remove("visible");
+    isVisible = false;
+  }
+});
 
 // Function to handle pop-up display based on URL hash
 // Function to handle pop-up display based on URL hash

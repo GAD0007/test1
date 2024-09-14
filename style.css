@@ -19,6 +19,33 @@ body{
     /* margin-right: auto; */
     /* justify-content: center; */
 }
+.A-invi {
+    height: 0px;
+    background-color: white;
+    top: 0px !important;
+    z-index: 4000000;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(-20px); /* Shifted slightly up */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+    pointer-events: none; /* Prevent interaction when invisible */
+  }
+  
+  .A-invi.visible {
+    background-color: white;
+    height: fit-content;
+
+
+    position: sticky;
+    top: 0px;
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
+    pointer-events: auto; /* Allow interaction when visible */
+  }
+   
+.nav-sticky{
+   
+
+}
 .info-sign{
    background-color: rgb(96, 117, 96);
    color: white;
@@ -159,6 +186,20 @@ section.BG{
     position: relative;
     width: 100%;
     height: 480px;
+    background-color: rgb(255, 255, 255) !important;
+z-index: 1;
+padding-bottom: 20px;
+/* margin: 20px; */
+/* padding-right: 20px; */
+
+
+}
+section.BG2{
+
+
+    position: relative;
+    width: 100%;
+    height: fit-content;
     background-color: rgb(255, 255, 255) !important;
 z-index: 1;
 padding-bottom: 20px;
@@ -613,6 +654,9 @@ a{
         background-color: transparent;
         border: none;
         margin-left: 0px;
+        color: white;
+        position: relative;
+        right: 10px;
       }
       .drop-arrow{
         position: relative;
@@ -620,7 +664,9 @@ a{
       }
   .no-pad{
     padding-left: 0px !important;
-    color: black;
+    color: black !important;
+    position: relative;
+    right: 0px !important;
   }
       /* Initially hide the dropdown content */
       .dropdown-content {
@@ -944,11 +990,11 @@ section.F{
     cursor: pointer;
     z-index: 1000;
   }
-  .boxxx{
+  /* .boxxx{
     position: sticky;
     top: 0px;
     z-index: 60000000;
-  }
+  } */
   .carousel-button.prev {
     left: 0;
   }
@@ -1845,10 +1891,17 @@ a {
 .sort-filter{
     /* visibility:hidden; */
     display: flex;
+    justify-content: center;
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+padding: 15px;
+margin-top: 30px;
     /* position: sticky; */
     /* top: 150px; */
     /* z-index: 200000; */
-    background-color: rgb(212, 165, 78);
+    color: white;
+    background-color:rgb(96, 117, 96);
 
 }
 .dropdown-item:hover{
@@ -2744,7 +2797,7 @@ font-size: 13px ;
     }
     .nav-item7{
         position: absolute;
-        left: 87%;
+        left: 90%;
         top: 10%;
     
     }
@@ -2796,7 +2849,7 @@ font-size: 13px ;
         position: absolute;
         display: flex;
         left: 40%;
-        bottom: -40%;
+        bottom: -70%;
         /* margin-left: 5%; */
         /* padding-bottom: 10px; */
     }
@@ -2872,7 +2925,9 @@ font-size: 13px ;
         /* position: sticky; */
         /* top: 100px; */
         z-index: 1000;
-        background-color: white;
+        justify-content: center;
+        background-color:rgb(96, 117, 96);
+
     
     }
     .carousel-image{
@@ -2884,6 +2939,7 @@ font-size: 13px ;
         border-bottom: 1px solid rgb(206, 203, 203);
         padding-bottom: 5px;
         padding-top: 10px;
+        padding-right: 10px;
 
     }
     .offcanvas-header{
@@ -2971,7 +3027,15 @@ section.BG{
     height: 300px;
     /* background-color: red; */
 z-index: 1;
+}
+section.BG2{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+z-index: 1;
 }}
+
 
 @media screen and (max-width: 766px) {
     .who-are-we{
