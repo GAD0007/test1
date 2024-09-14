@@ -19,33 +19,9 @@ body{
     /* margin-right: auto; */
     /* justify-content: center; */
 }
-.A-invi {
-    height: 0px;
-    background-color: white;
-    top: 0px !important;
-    z-index: 4000000;
-    opacity: 0; /* Initially invisible */
-    transform: translateY(-20px); /* Shifted slightly up */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-    pointer-events: none; /* Prevent interaction when invisible */
-  }
-  
-  .A-invi.visible {
-    background-color: white;
-    height: fit-content;
 
-
-    position: sticky;
-    top: 0px;
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Back to original position */
-    pointer-events: auto; /* Allow interaction when visible */
-  }
-   
-.nav-sticky{
    
 
-}
 .info-sign{
    background-color: rgb(96, 117, 96);
    color: white;
