@@ -551,7 +551,7 @@ width: 150px;
 }
 .offcanvas-header{
     margin-bottom: -15px !important;
-    margin-top: -2px !important;
+    margin-top: 15px !important;
 
 }
 .no-blue{
@@ -1585,7 +1585,7 @@ footer2{
 .subscription-button{
     color: white;
     width: 45%;
-    background-color:#0f0f0f;
+    background: linear-gradient(135deg, rgb(96, 117, 96), rgb(96, 117, 96));
     border-radius: 5px;
     padding: 8px 10px 8px 10px;
     border: none;
@@ -2075,7 +2075,7 @@ margin-top: 30px;
     font-weight: bold;
 }
 .j-j-bold{
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
 }
 .link-nav {
@@ -2141,7 +2141,7 @@ margin-top: 30px;
 .canva-body2{
     background-color: red;
     /* background-image: ; */
-    background: rgba(73, 72, 72, 0.7) url('images/IMG-0208.JPG'); /* Replace with the path to your image */
+    background: rgb(96, 117, 96) url('images/stack-different-colorful-boxes-against-pink-background2.png'); /* Replace with the path to your image */
     background-size: cover;
     background-blend-mode: darken;
     color: white;
@@ -2283,8 +2283,8 @@ margin-top: 30px;
   padding: 10px 0;
 }
 .offcanvas-body{
-  max-height: calc(200vh - 447px);
   /* width: 250px; */
+  height: 100vh;
 
 }
 /* cart items */
