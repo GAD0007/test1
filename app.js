@@ -139,12 +139,7 @@ function sortProductsByPriceHigh() {
   productsEl.innerHTML = "";
   renderProdcuts();
 }
-window.addEventListener('beforeunload', function() {
-  const descriptions = document.querySelectorAll('.product-description');
-  descriptions.forEach(description => {
-    description.style.display = 'none';  // Hide all pop-ups before leaving
-  });
-});
+
 function toggleProductDescription(productId) {
   const description = document.getElementById(`product-description-${productId}`);
   
