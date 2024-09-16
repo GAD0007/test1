@@ -449,6 +449,7 @@ function renderProdcuts(productsArray = products) {
             </div>
             </div>
           </div>
+          
          </section>
         </div>
       </div>`;
