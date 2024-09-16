@@ -117,24 +117,19 @@
                 <img src="images/hamburger.png" />
     
               </button> 
+              
               <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="canva-body2">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <div type="button"  data-bs-dismiss="offcanvas" aria-label="Close"><img src="images/close.png"></div>
                 </div>
               <div class="new-long-nav">
                 <div class="offcanvas-body">
-                  <div ><a class="button" id="home-btn" href="./index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
+                  <div ><a class="button no-pad" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
                   </div>
-                  <div class="mt-3" ><a class="button" id="home-btn" href="store.html"><span class="small-icons"><img src="images/giftbox (1).png" alt=""></span> Gift Boxes</a>
+                  <div class="mt-3" ><a class="button no-pad" id="home-btn" href="store.html"><span class="small-icons"><img src="images/giftbox (1).png" alt=""></span> Gift Boxes</a>
                   </div>
-                <!-- <div class="mt-3">                   <a
-                  class="button"
-                  id="store-btn"
-                  href="store.html"
-                  ><span class="small-icons"><img src="images/fashion.png" alt=""></span>
-                   Gift Shop</a
-                >   </div> -->
                 <div class="dropdown mt-3" id="store-btn"
                 href="store.html">
                   <button class="no-pad" onclick="toggleDropdown()"><span class="small-icons"><img src="images/shopping-bag (1).png" alt=""></span> Gift Shop <span class="drop-arrow"> <img src="images/down.png"></span></button>
@@ -144,7 +139,7 @@
                   </div>
                 </div>
                 <div class="mt-3">                   <a
-                  class="button"
+                  class="button no-pad"
                   id="contact-btn"
                 
                   class="link-nav"
@@ -153,7 +148,7 @@
                   ><span class="small-icons"><img src="images/blog (1).png" alt=""></span> Blog</a
                 ></div>
                 <div class="mt-3">                   <a
-                  class="button"
+                  class="button no-pad"
                   id="contact-btn"
                 
                   class="link-nav"
@@ -162,15 +157,20 @@
                   ><span class="small-icons"><img src="images/user.png" alt=""></span> Account</a
                 ></div>
                 <div class="mt-3">                  <a
-                  href="" 
-                            aria-controls=""  data-bs-toggle=""
-                  class="button"
+                  href="#offcanvasInfo" aria-controls="offcanvasInfo" data-bs-toggle="offcanvas"" 
+                         
+                  class="button no-pad"
                   id="about-btn"
                   
                   ><span class="small-icons"><img src="images/info.png" alt=""></span> About us</a
                 ></div>
+                <div class="mt-3 ">                 
+                  <a  class="no-pad"
+                   href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" data-bs-toggle="offcanvas"><span class="small-icons"><img src="images/info.png" alt=""></span> Contact</a>
+                </div>
                 </div>
               </div>
+                </div>
               </div>
             </div>
             <div class="navigations">
@@ -343,35 +343,92 @@
   </section>
 
 
-    <section class="absolute-canvas">
-     
-      <div
-        class="offcanvas offcanvas-start"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
-       <div class="canva-body2">
+  <section class="absolute-canvas">
+    <div
+      class="offcanvas offcanvas-start"
+      
+      tabindex="-1"
+      id="offcanvasInfo"
+      aria-labelledby="offcanvasInfoLabel"
+    >
+      <div class="canva-body2">
         <div class="offcanvas-header">
-          <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">About</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
+          <div class="offcanvas-title" id="offcanvasInfoLabel">
+            
+            <span class="j-j-bold">Our Story</span>
+          </div>
           <div       
             class="button-close-about"     
             data-bs-dismiss="offcanvas"
             aria-label="Close"
-          ><img  src="images/close.png" alt=""></div>
+          >
+            <img src="images/close.png" alt="">
+          </div>
         </div>
         <div class="offcanvas-body">
           <div>
             <p>
-              Jet & Joe, a fashion powerhouse, embodies a 
-              blend of sophistication and uniqueness. 
-              Our brand, a hub for style enthusiasts, 
-              
-              curates clothing that transcends trends, 
-              
-              making a bold statement about individual identity. Inspired by modern 
-              aesthetics, Jet & Joe delivers top-notch, high-quality products that redefine contemporary fashion. From exclusive designs to unmatched craftsmanship, each piece reflects our commitment to elevating your wardrobe. Redefine your fashion journey with Jet & Joe.</p>
+             
+  We create
+   beautifully curated, ready-made gift boxes 
+   for every occasion. With options to suit all
+    styles and budgets,
+   we make gifting easy and meaningful.
+    You can also build your own custom box 
+    for a personal touch. Celebrate life’s moments 
+    with [Brand Name]—the perfect gift, every time.
+            </p>
+            <div class="social-logo mb-3">
+              <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
+                <img
+                  src="images/Instagram.png"
+                  class="social-logo1"
+                  alt="Instagram-Logo"
+                />
+              </a>
+              <a href="https://wa.me/message/ZTMRCGOFCWBMM1" class="button">
+                <img
+                  src="images/whatsapp.png"
+                  width="24px"
+                  alt="whatsapp-icon"
+                />
+              </a>
+            </div>
+            <div class="mb-5">
+              <a href="store.html">
+                <button class="shop-btn-small-offcanva">Shop now</button>
+              </a>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="second-canva">
+    <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="canva-body2">
+        <div class="offcanvas-header">
+          <div class="offcanvas-title" id="offcanvasExampleLabel">  <span class="j-j-bold">Reach out to us on</span></div>
+  
+          <div class="button-close-about" data-bs-dismiss="offcanvas" aria-label="Close"><img  src="images/close.png" alt=""></div>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div>
+       
+              <p><span class="green-icon"><img src="images/phone-call.png
+               " width="20px" height="18px" alt="green-icon" class=""></span>Jethro +2349165972686</p>
+               <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jetnjoe01@gmail.com</p>
+             </div>
+             <div>
+          
+               <p><span class="green-icon"><img src="images/phone-call.png
+                " width="20px" height="18px" alt="green-icon" class=""></span>Joseph +2349050016639<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700" rel="stylesheet" /></p>
+                <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jtemioluwa7@gmail.com</p>
+              </div>
+           
+         </div>
               <div class="social-logo mb-3">
                 <a href="https://www.instagram.com/jetandjoe?igsh=MTlkdDYyYWZyZzFiYQ==" class="button">
                   <img
@@ -389,82 +446,19 @@
                 </a>
               </div>
               <div class="mb-5">
-                <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button></a>
-
-
+               <a href="store.html"> <button class="shop-btn-small-offcanva">Shop now</button></a>
               </div>
-              <div class="logo-jet-box">
-                <img src="images/rosy.avif" width="150px">
-          
-                
-               </div>
+            
             <div>
          
               
              </div>
           
         </div>
-       </div>
-      </div>
-    </section>
-    <section class="second-canva">
-      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="canva-body2">
-          <div class="offcanvas-header">
-            <div class="offcanvas-title" id="offcanvasExampleLabel"> <span class="about-about">Contact</span> <br> <span class="j-j-bold">Jet & Joe</span></div>
-
-            <div class="button-close-about" data-bs-dismiss="offcanvas" aria-label="Close"><img  src="images/close.png" alt=""></div>
-          </div>
-          <div class="offcanvas-body">
-            <div>
-              <div>
-         
-                <p><span class="green-icon"><img src="images/phone-call.png
-                 " width="20px" height="18px" alt="green-icon" class=""></span>Jethro +2349165972686</p>
-                 <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jetnjoe01@gmail.com</p>
-               </div>
-               <div>
-            
-                 <p><span class="green-icon"><img src="images/phone-call.png
-                  " width="20px" height="18px" alt="green-icon" class=""></span>Joseph +2349050016639</p>
-                  <p><span class="green-icon"><img src="images/gmail.png" width="20px" height="18px" alt="green-icon" class=""></span>jtemioluwa7@gmail.com</p>
-                </div>
-             
-           </div>
-                <div class="social-logo mb-3">
-                  <a href="" class="button">
-                    <img
-                      src="images/Instagram.png"
-                      class="social-logo1"
-                      alt="Instagram-Logo"
-                    />
-                  </a>
-                  <a href="" class="button">
-                    <img
-                      src="images/whatsapp.png"
-                      width="24px"
-                      alt="whatsapp-icon"
-                    />
-                  </a>
-                </div>
-                <div class="mb-5">
-                  <a href="store.html"><button class="shop-btn-small-offcanva">Shop now</button></a>
-                </div>
-                <div class="logo-jet-box">
-                  <img src="images/rosy.avif" width="150px">
-            
-                  
-                 </div>
-              <div>
-           
-                
-               </div>
-            
-          </div>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
     <section class="third-canva">
      
    

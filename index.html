@@ -95,9 +95,9 @@ function SubForm (){
             </div>
           <div class="new-long-nav">
             <div class="offcanvas-body">
-              <div ><a class="button" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
+              <div ><a class="button no-pad" id="home-btn" href="index.html"><span class="small-icons"><img src="images/home.png" alt=""></span> Home</a>
               </div>
-              <div class="mt-3" ><a class="button" id="home-btn" href="store.html"><span class="small-icons"><img src="images/giftbox (1).png" alt=""></span> Gift Boxes</a>
+              <div class="mt-3" ><a class="button no-pad" id="home-btn" href="store.html"><span class="small-icons"><img src="images/giftbox (1).png" alt=""></span> Gift Boxes</a>
               </div>
             <div class="dropdown mt-3" id="store-btn"
             href="store.html">
@@ -108,7 +108,7 @@ function SubForm (){
               </div>
             </div>
             <div class="mt-3">                   <a
-              class="button"
+              class="button no-pad"
               id="contact-btn"
             
               class="link-nav"
@@ -117,7 +117,7 @@ function SubForm (){
               ><span class="small-icons"><img src="images/blog (1).png" alt=""></span> Blog</a
             ></div>
             <div class="mt-3">                   <a
-              class="button"
+              class="button no-pad"
               id="contact-btn"
             
               class="link-nav"
@@ -128,11 +128,15 @@ function SubForm (){
             <div class="mt-3">                  <a
               href="#offcanvasInfo" aria-controls="offcanvasInfo" data-bs-toggle="offcanvas"" 
                      
-              class="button"
+              class="button no-pad"
               id="about-btn"
               
               ><span class="small-icons"><img src="images/info.png" alt=""></span> About us</a
             ></div>
+            <div class="mt-3 ">                 
+              <a  class="no-pad"
+               href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" data-bs-toggle="offcanvas"><span class="small-icons"><img src="images/info.png" alt=""></span> Contact</a>
+            </div>
             </div>
           </div>
             </div>
@@ -224,7 +228,7 @@ function SubForm (){
 <section class="absolute-canvas">
   <div
     class="offcanvas offcanvas-start"
-    data-bs-scroll="true"
+    
     tabindex="-1"
     id="offcanvasInfo"
     aria-labelledby="offcanvasInfoLabel"
@@ -284,7 +288,7 @@ We create
   </div>
 </section>
 <section class="second-canva">
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas offcanvas-start"  tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="canva-body2">
       <div class="offcanvas-header">
         <div class="offcanvas-title" id="offcanvasExampleLabel">  <span class="j-j-bold">Reach out to us on</span></div>
@@ -1010,7 +1014,8 @@ We create
           <a class="explore" href="#">Explore</a>
         </p>
         <p>
-          <a href="">Contact</a>
+          <a  class=""
+          < href="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" data-bs-toggle="offcanvas">Contact</a>
         </p>
         <p>
           <a href="#offcanvasInfo" aria-controls="offcanvasInfo" data-bs-toggle="offcanvas">About us </a>
