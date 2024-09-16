@@ -18,27 +18,27 @@ function toggleDropdown() {
   }
 }
 function showProductPopup() {
-  const hash = window.location.hash;
-  const storeContent = document.getElementById('store-content');
-
-  if (hash && hash.startsWith('#product-')) {
+    const hash = window.location.hash;
+    const storeContent = document.getElementById('store-content');
+    
+    if (hash && hash.startsWith('#product-')) {
       const productId = hash.split('-')[1];
       const description = document.getElementById(`product-description-${productId}`);
-
+      
       if (description) {
-          description.style.display = 'block';
-          storeContent.classList.add('active');
-          history.replaceState({ popupOpen: true, productId: productId }, "", hash);
+        // Show the pop-up
+        description.style.display = 'block';
+        
+        // Optionally, you can update the history state if needed
+        history.replaceState({ popupOpen: true, productId: productId }, "", hash);
       }
-  } else {
-      storeContent.classList.remove('active');
+    }
+    
+    // Once the pop-up logic is done, show the store content
+    if (storeContent) {
+      storeContent.style.display = 'block';
+    }
   }
-}
-window.requestAnimationFrame(() => {
-  description.style.display = 'block';
-  storeContent.style.display = 'block';
-});
-
   
   // Attach event listener to handle hash change
   window.addEventListener('load', showProductPopup);
