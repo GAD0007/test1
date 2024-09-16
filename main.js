@@ -18,27 +18,27 @@ function toggleDropdown() {
   }
 }
 function showProductPopup() {
-    const hash = window.location.hash;
-    const storeContent = document.getElementById('store-content');
-    
-    if (hash && hash.startsWith('#product-')) {
+  const hash = window.location.hash;
+  const storeContent = document.getElementById('store-content');
+
+  if (hash && hash.startsWith('#product-')) {
       const productId = hash.split('-')[1];
       const description = document.getElementById(`product-description-${productId}`);
-      
+
       if (description) {
-        // Show the pop-up
-        description.style.display = 'block';
-        
-        // Optionally, you can update the history state if needed
-        history.replaceState({ popupOpen: true, productId: productId }, "", hash);
+          description.style.display = 'block';
+          storeContent.classList.add('active');
+          history.replaceState({ popupOpen: true, productId: productId }, "", hash);
       }
-    }
-    
-    // Once the pop-up logic is done, show the store content
-    if (storeContent) {
-      storeContent.style.display = 'block';
-    }
+  } else {
+      storeContent.classList.remove('active');
   }
+}
+window.requestAnimationFrame(() => {
+  description.style.display = 'block';
+  storeContent.style.display = 'block';
+});
+
   
   // Attach event listener to handle hash change
   window.addEventListener('load', showProductPopup);
@@ -57,56 +57,7 @@ function showProductPopup() {
   }
   
 
-// Array of image paths
-// const images = [
-//   'images/Untitled design (2).png',
-//   // 'images/Untitled design (1).png',
-//   'images/Untitled design (3).png',
-//   'images/Untitled design.png',
-//   'images/Untitled design (4).png'
-// ];
 
-// let currentImageIndex = 0; // Start with the first image
-
-// // Function to change the image source with a transition
-// function changeImage() {
-//   const imgElement = document.getElementById('background-image');
-  
-//   // Fade out the current image
-//   imgElement.classList.remove('show');
-  
-//   setTimeout(() => {
-//       // Update the src attribute with the next image in the array after fading out
-//       imgElement.src = images[currentImageIndex];
-      
-//       // Fade in the new image
-//       imgElement.classList.add('show');
-      
-//       // Increment the index to the next image, loop back if needed
-//       currentImageIndex = (currentImageIndex + 1) % images.length;
-//   }, 2000); // Timeout should match the transition duration in the CSS
-// }
-
-// Initial image load with a fade-in
-// document.getElementById('background-image').classList.add('show');
-
-// // Change image every 5 seconds
-// setInterval(changeImage, 5000);
-
-// window.onscroll = function() {
-//     showScrollButton();
-//   };
-
-//   function showScrollButton() {
-//     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//       scrollToTopBtn.style.display = "block";
-//     } else {
-//       scrollToTopBtn.style.display = "none";
-//     }
-//   }
-
-  // Scroll to top when the button is clicked
   function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
@@ -157,18 +108,7 @@ const itemPrices = {
 }
 
 
-// the function that adds the counter to the small counter on cart
 
-// const counterNav = function () {
-
-    
-// }
-
-// 
-// document.querySelector('.item-cost1').textContent = `$${itemPrices.item1}`
-// console.log(itemPrices.item1);
-// document.querySelector('.item-cost2').textContent = `$${itemPrices.item2}`
-// document.querySelector('.item-cost3').textContent = `$${itemPrices.item3}`
 
 
 const homeBtn = document.getElementById("home-btn")
@@ -181,9 +121,7 @@ const totalCartPrice = document.querySelector('.cost-total')
 const cartItem1 = document.querySelector('.item-1')
 const cartItem2 = document.querySelector('.item-2')
 const cartItem3 = document.querySelector('.item-3')
-// cartItem1.style.display = "none"
-// cartItem2.style.display = "none"
-// cartItem3.style.display = "none"
+
 
 
 
@@ -200,11 +138,9 @@ for (let i = 0; i < PlusBtn.length; i++)
 PlusBtn[i].addEventListener('click',function name(params) {
     const buttonValue = PlusBtn[i].value;
     if (buttonValue == 1) {
-        // counter1 = 0
+     
         counter1 ++
-        // console.log('001');
-        // console.log(counter);
-        // counterValue.textcontent = counter
+      
         let counterArrival1 =  document.querySelector(`.counter-value${buttonValue}`)
         counterArrival1.textContent = counter1
         arrayCounter[0]= [];
@@ -218,12 +154,10 @@ PlusBtn[i].addEventListener('click',function name(params) {
         
     } else if( buttonValue == 2 ) {
         console.log('002');
-        // counter2 = 0
+     
 
         counter2 ++
-        // console.log('001');
-        // console.log(counter);
-        // counterValue.textcontent = counter
+     
         let counterArrival2 =  document.querySelector(`.counter-value${buttonValue}`)
         counterArrival2.textContent = counter2 
         arrayCounter[1]= [];
@@ -235,12 +169,10 @@ PlusBtn[i].addEventListener('click',function name(params) {
     }
     else if( buttonValue == 3 ) {
         console.log('003');
-        // counter3 = 0
+     
 
         counter3 ++
-        // console.log('001');
-        // console.log(counter);
-        // counterValue.textcontent = counter
+    
         let counterArrival3 =  document.querySelector(`.counter-value${buttonValue}`)
         counterArrival3.textContent = counter3 
         arrayCounter[2]= [];
@@ -265,9 +197,7 @@ minusBtn[i].addEventListener('click',function name(params) {
       if (counter1 > 0) {
 
         counter1 --
-        // console.log('001');
-        // console.log(counter);
-        // counterValue.textcontent = counter
+   
         let counterArrival1 =  document.querySelector(`.counter-value${buttonValueMinus}`)
         counterArrival1.textContent = counter1
         arrayCounter[0]= [];
@@ -282,9 +212,7 @@ minusBtn[i].addEventListener('click',function name(params) {
         if (counter2 > 0) {
 
         counter2 --
-        // console.log('001');
-        // console.log(counter);
-        // counterValue.textcontent = counter
+      
         let counterArrival2 =  document.querySelector(`.counter-value${buttonValueMinus}`)
         counterArrival2.textContent = counter2 
         arrayCounter[1]= [];
@@ -299,9 +227,7 @@ minusBtn[i].addEventListener('click',function name(params) {
 
       if (counter3 > 0) {
         counter3 --
-        // console.log('001');
-        // console.log(counter);
-        // counterValue.textcontent = counter
+      
         console.log(counter3);
         let counterArrival3 =  document.querySelector(`.counter-value${buttonValueMinus}`)
         counterArrival3.textContent = counter3 
@@ -316,32 +242,3 @@ minusBtn[i].addEventListener('click',function name(params) {
     
 })
 
-// for (let i = 0; i < toCartBtn.length; i++) 
-
-// toCartBtn[i].addEventListener("click",function name(params) {
-//     console.log(arrayCounter);
-//     const buttonCartValue = toCartBtn[i].value;
-//     if (buttonCartValue == 1) {
-//         console.log('first');  
-//     }else if (buttonCartValue == 2) {
-//         console.log('second');
-//     }
-//     else if (buttonCartValue == 3) {
-//         console.log('third');
-//     }
-
-
-    // let price = 10000
-    // totalCartPrice.textContent= price * arrayCounter[0][0] + arrayCounter[1][0] + arrayCounter[2][0] 
-// console.log(arrayCounter[0][0] + arrayCounter[1][0] + arrayCounter[2][0] );
-    
-// })
-// console.log(arrayCounter);
-// console.log(arrayCounter[0][0] + arrayCounter[1][0] + arrayCounter[2][0] );
-
-// if (window.innerWidth > 991) {
-//     document.querySelector('.navigation-small').style.display = "none"
-
-//     // overlayOpen();
-    
-//   }
