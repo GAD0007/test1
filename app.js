@@ -139,6 +139,19 @@ function sortProductsByPriceHigh() {
   productsEl.innerHTML = "";
   renderProdcuts();
 }
+function closeProductPopup(productId) {
+  const description = document.getElementById(`product-description-${productId}`);
+  
+  if (description) {
+    description.style.display = 'none';
+  }
+  
+  // Small delay before navigating away
+  setTimeout(() => {
+    history.pushState({ popupOpen: false }, "", "index.html");
+  }, 900);  // Adjust delay as needed
+}
+
 function toggleProductDescription(productId) {
   const description = document.getElementById(`product-description-${productId}`);
   
